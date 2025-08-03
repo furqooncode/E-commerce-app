@@ -1,0 +1,150 @@
+body {
+    background:#EDEDE9;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    font-size:16px;
+    font-family: sans-serif;
+    max-height: 100%;
+}
+.box{
+    background:black;
+    border-radius: 0 0 16px 16px;
+}
+.contain{
+    height: 300px;
+    width: 100%;
+}
+.contain img{
+    height: 100%;
+    width: 100%;
+    background:white;
+}
+.products{
+    padding:2px;
+    display:flex;
+    justify-content:space-between;
+    background:whitesmoke;
+}
+.products .title{
+    width: 150px;
+    margin-left: 5px;
+}
+.title p{
+    font-size:18px;
+    font-weight:600;
+}
+.products .price{
+    display:flex;
+    align-items:center;
+    margin-right: 5px;
+}
+.price span{
+    font-size:18px;
+    font-weight:500;
+}
+.select{
+    margin:5px;
+    padding: 3px;
+    color:white;
+}
+.select span{
+    font-size:18px;
+    font-weight:300;
+}
+.size{
+   padding: 5px;
+   display:flex;
+   gap:10px;
+}
+.size button{
+    width: 40px;
+    height: 40px;
+    border-radius:30px;
+    border:none;
+    outline:none;
+    text-align:center;
+}
+.productsDescrip{
+    color:white;
+    text-align:center;
+    padding-bottom:15px;
+    margin-bottom:7px;
+    margin: 10px;
+}
+/* pay button */
+.get{
+    margin:5px;
+    padding:2px;
+}
+.get button{
+    padding: 10px;
+    width: 100%;
+    background: black;
+    color: white;
+    border-radius:20px;
+    border:none;
+    outline:none;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:3px;
+}
+/* items */
+.item{
+    background:lightgray;
+    padding: 10px;
+    display:flex;
+    align-items:center;
+    border-radius: 12px;
+    gap:10px;
+    margin:3px;
+}
+.item-img{
+    width:60px;
+    height: 60px;
+    border-radius: 10px;
+}
+.item-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: white;
+}
+.itemId{
+    display:flex;
+    width: 80%;
+    justify-content:space-between;
+    height: 60px;
+}
+.itemName{
+    position:relative;
+    width: 60%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.itemName h3{
+    position: absolute;
+    top:-10px;
+}
+.itemName span{
+    position: absolute;
+    bottom:10px;
+    font-size:20px;
+    font-weight:400;
+}
+.increase{
+    width: 40%;
+    display: flex ;
+    align-items:center;
+    padding: 10px;
+    gap:10px;
+}
+.increase button{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border:none;
+    font-size:18px;
+    font-weight:700;
+}
