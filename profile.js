@@ -8,6 +8,7 @@ const selling = document.getElementById("selling");
 const country= document.getElementById("country");
 const state = document.getElementById("state");
 const address = document.getElementById("address");
+const bio = document.getElementById('bio')
 
 
 photo.onchange = function () {
@@ -23,6 +24,7 @@ function edit() {
  state.removeAttribute("readonly");
  address.removeAttribute("readonly");
  selling.removeAttribute("readonly");
+ bio.removeAttribute("readonly")
       
     alert('Edit profile')
 }
@@ -35,7 +37,8 @@ mail.value === '' ||
 country.value === '' ||
 selling.value === '' ||
 address.value === '' ||
-state.value === ''){
+state.value === '' ||
+bio.value === ''){
 console.log('empty')
 }else{
     name.setAttribute('readonly', true)
@@ -46,7 +49,7 @@ console.log('empty')
     state.setAttribute('readonly', true)
   address.setAttribute('readonly', true)
   selling.setAttribute('readonly', true)
-       
+  bio.setAttribute('readonly', true)
      alert('profile saved');
 }
 }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="login.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+<div class="container">
+       
+        <form>    
+       <div class="head">
+            <h3>LOGIN PAGE</h3>
+        </div>
+        
+            <span>Email</span><br>
+            <input type="email" placeholder="Enter Your Email"><i class="fa-solid fa-envelope"></i><br>
+            
+            <span>Password</span><br>
+            <input type="password" placeholder="Enter Password"><i class="fa-solid fa-eye-slash"></i><br>
+           
+           <div class="choice">
+               <div class="remember">
+                   <input type="checkbox">
+                   <span>Remember me</span>
+               </div>
+               
+               <div class="forgot">
+                   <span>forgotten password?</span>
+               </div>
+           </div> 
+           
+           <div class="submit">
+         <button id="submit">LOGIN</button>
+        </div>
+        
+        <div class="new">
+            <span>don't have an account?<a href="buyersign.html">sign up</a></span>
+        </div>
+        </form>
+        
+        
+    </div>
+    
+    <script>
+      const submit = document.getElementById('submit');
+submit.addEventListener('click', function () {
+    location.href = "index.html";
+})
+    </script>  
+  
+</body>
+</html>
