@@ -1,6 +1,7 @@
 body{
   margin:0;
   padding :0;
+  font-family: sans-serif;
 }
 .container{
   padding: 10px;
@@ -44,7 +45,7 @@ main{
 }
 .speech{
   background: yell;
-  font-size: 18px;
+  font-size: 16px;
 }
 .products{
   background: ed;
@@ -57,6 +58,9 @@ table .head{
   background : lightgray;
   border:0;
   
+}
+table td{
+  font-weight: 500;
 }
 table .total{
   border:1px solid;
