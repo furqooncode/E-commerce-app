@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="buyerprofile.css" type="text/css" media="all" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  
-  <div class="box">
+
+ <div class="box">
      
      <!-- header -->
     <header>
         <div class="back">
-            <button> < </button>
+            <button> <i class="fa-solid fa-arrow-left"></i> </button>
         </div>
         
         <div class="edit">
@@ -24,17 +24,17 @@
         <!-- profile -->
         <div class="profile-pics">
             <div class="pics">
-                <img src="shoe.jpg" alt="" id="profile">
+                <img src="picture.jpeg" alt="" id="profile">
             </div>
             
             <div class="choose">
                 <input type="file" id="photo">
-                <label for="photo">choose</label>
+     <label for="photo"><i class="fa-solid fa-camera"></i></label>
             </div>
             
             <div class="info">
                 <span>Furqoon</span>
-                <p>(Seller)</p>
+                <p>(BUYER)</p>
             </div>
         </div>
         <!-- form -->
@@ -42,8 +42,7 @@
       <span>Name</span><br>
      <input type="text" placeholder="Furqoon" id="name" readonly><br>
       
-      <span>Company's Name</span><br>
-    <input type="text" placeholder="Furqoon store" id="company" readonly><br>
+    
      
      <span>Number</span><br>
      <input type="text" placeholder="+234 700 4566 123"  id="number" readonly><br>
@@ -51,12 +50,7 @@
      <span>Email</span><br>
      <input type="email" placeholder="abcd@gmail.com" id="mail" readonly><br>
      
-     <span>Products selling</span><br>
-     <input type="text" placeholder="perfumes" id="selling" readonly><br>
-     
-     <span>Bio</span><br>
-     <input type="text" placeholder="write something about yourself" id="bio" readonly><br>
-     
+    
      
      <span>Country</span><br>
      <input type="text" placeholder="Nigeria" id="country" readonly><br>
@@ -64,19 +58,17 @@
      <span>State</span><br>
      <input type="text" placeholder="Sango" id="state" readonly><br>
      
+     
      <span>Address</span><br>
      <input type="text" placeholder="111 henry estate newyork,Ogun state Nigeria" id="address" readonly><br>
      
- <button onclick="save()">SAVE</button>
+     
+    <button onclick="save()">SAVE</button>
         </form>
         
-        <div class="submit">
-
-    </div>    
+        
 </div>
-<script src="profile.js"></script>
-  
-  
+<script src="buyerprofile.js"></script>
   
 </body>
 </html>

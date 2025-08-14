@@ -1,0 +1,48 @@
+body {
+    background: whitesmoke;
+    margin:0;
+}
+.container{
+    display:grid;
+    background: url("back.jpeg") no-repeat center center;
+    background-size:cover;
+    place-items:center;
+    height: 100vh;
+    background: blk;
+    top: 0;
+    left: 0;
+}
+.intro{
+   
+    padding: 10px;
+    width: %;
+    text-align:center;
+}
+.intro h1{
+    color: black;
+    font-size:34px;
+    font-family: sans-serif;
+}
+.texting{
+    padding:10px;
+    text-align:center;
+}
+.texting h3{
+    font-size:30px;
+}
+.choose{
+    
+    text-align:center;
+    display:grid;
+    width: 90%;
+    padding: 10px;
+}
+.choose button{
+    padding: 15px;
+    margin-bottom:10px ;
+    background: black;
+    color:white;
+    border:none;
+    border-radius: 12px;
+    outline:none;
+}

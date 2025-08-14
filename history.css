@@ -1,0 +1,254 @@
+.bottom{
+    background : black;
+    color:white;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    border-radius: 16px 16px 0 0;
+    display: none;
+}
+.cancel{
+    padding:5px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+}
+.cancel button{
+    width: 30px;
+    height: 30px;
+    margin-right:10px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color:white;
+    background: transparent;
+    border-radius: 50%;
+}
+.cancel button:hover{
+    background: gray;
+}
+.data{
+    display:flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 10px;
+    transition: 0.5s ease all;
+}
+.month{
+    position: absolute;
+    height:90px;
+    width: 50px;
+    left:80px;
+    top:0px;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.year{
+    position: absolute;
+    height: 90px;
+    width: 50px;
+    right:80px;
+    top:0;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.year li{
+    margin-top:30px;
+    margin-bottom:30px;
+    list-style: none;
+}
+.month li{
+    margin-top:30px;
+    margin-bottom:30px;
+    list-style: none;
+}
+.line{
+    background: white;
+    height: 1px;
+    position:fixed;
+    z-index:100;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.line2{
+    background:white;
+    height: 1px;
+    position:fixed;
+    z-index:100;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.real{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin-top: 25px;
+}
+.submit{
+    position: absolute;
+    bottom:5px;
+    width: 100%;
+   text-align: center;
+   padding: 5px;
+}
+.submit button{
+    padding: 10px;
+    width:90%;
+    border-radius:20px;
+    border: none;
+    outline:none;
+    font-size:18px;
+}
+body {
+   margin: 0;
+   padding: 0;
+   background: whitesmoke;
+   font-family: sans-serif;
+}
+header{
+    display: flex;
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    height: 40px;
+    background: whitesmoke;
+    color: black;
+    z-index: 100;
+}
+.back{
+    width: 40px;
+    height:100%;
+    display: flex;
+}
+.back button{
+    width: 100%;
+    height: 100%;
+    border:none;
+    font-size: 20px;
+    font-weight: 700;
+    outline:none;
+    background : transparent;
+    color:black;
+}
+.topic {
+    margin-right:10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.topic p{
+    font-size: 20px;
+}
+.start{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    position: fixed;
+    width: 100%;
+    top:30px;
+   background: whitesmoke;
+  padding: 5px;
+    left:0;
+    z-index:1000;
+    height: 30px;
+}
+.clear button{
+    border:none;
+    outline:none;
+    font-size:18px;
+    font-weight:500;
+    width: 50px;
+    background: transparent;
+}
+.title{
+    height: 30px;
+    display:flex;
+    align-items: center;
+    border:1px solid black;
+    border-radius: 10px;
+    padding: 3px;
+}
+.title:active{
+    background:gray;
+    color:white;
+}
+.title h3{
+    font-size:14px;
+    font-weight:500;
+}
+main{
+        margin-top:65px;
+}
+.date{
+    height: 30px;
+    display:flex;
+     align-items:center;
+     margin-left: 5px;
+}
+.date span{
+    font-size:18px;
+    font-weight:500;
+}
+.history{
+   background: white;
+    display: flex;
+ 
+    padding: 3px;
+    height: 70px;
+    gap:5px;
+    margin-bottom: 5px;
+}
+.history .image{
+    width: 20%;
+    height:100%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.Name{
+    width:51%;   
+    position: relative;  
+    overflow: hidden;
+    text-wrap:nowrap;
+}
+.Name h4{
+    position: absolute;
+    top: -10px;
+    font-size:17px;
+}
+.Name span{
+    position: absolute;
+    bottom:10px;
+}
+.time{
+    width:25%;
+    position: relative;
+    overflow: hidden;
+    text-wrap:nowrap;
+}
+.time h4{
+    position: absolute;
+    font-size:18px;
+    top: 2px;
+    right: 0;
+    left: 0;
+}
+.time span{
+    position: absolute;
+    bottom:10px;
+    right: 0;
+    left: 0;
+    font-size: 12px;
+}

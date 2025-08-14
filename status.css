@@ -1,0 +1,187 @@
+body{
+    margin:0;
+    background: whitesmoke ;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    height: 40px;
+    background: black;
+    color:white;
+    z-index: 1000;
+}
+.back{
+    width: 40px;
+    height:100%;
+    display: flex;
+}
+.back button{
+    width: 100%;
+    height: 100%;
+    border:none;
+    font-size: 20px;
+    font-weight: 700;
+    outline:none;
+    background : transparent;
+    color:white;
+}
+.sub {
+    margin-right:10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.sub p{
+    font-size: 20px;
+}
+main{
+    margin-bottom: 70px;
+}
+.checker{
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px;
+    width:90%;
+    padding: 5px;
+    margin-top:40px;
+    margin-left: 10px;
+    white-space:nowrap;
+}
+.checker .last{
+   border:1px solid ; 
+    overflow: hidden;
+    width:48%;
+    border-radius:10px;
+    height: 150px;
+      flex-grow:1;
+    flex-basis:200;
+    display :grid;
+}
+.recent{
+    position: relative;
+}
+.recent h3{
+    position: absolute;
+    top:-15px;
+    
+}
+.recent table{
+    text-align:left;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    font-size: 14px;
+}
+.history{
+    position: relative;
+}
+.history h3{
+    position: absolute;
+    top:-15px;
+}
+.history table{
+    text-align:left;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    font-size: 14px;
+}
+.overview {
+    position: relative;
+}
+.overview h3{
+    position: absolute;
+    top:-15px;
+}
+.overview table{
+    text-align:left;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+}
+.confirm{
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px;
+    width:90%;
+    padding: 5px;
+    margin-top:40px;
+    margin-left: 10px;
+    white-space:nowrap;
+}
+.order{
+    border:1px solid;
+    overflow: hidden;
+    width:100%;
+    border-radius:10px;
+    height: 150px;
+}
+.purchases{
+    position: relative;
+}
+.purchases table{
+    text-align:left;
+    position: absolute;
+    top:30px;
+}
+.purchases h3{
+    position: absolute;
+    top:-15px;
+}
+.got{
+    position: relative;
+}
+.got h3{
+    position: absolute;
+    top:-15px;
+}
+.got table{
+    text-align:left;
+    position: absolute;
+    top:30px;
+}
+.check{
+    background: blak;
+    display:flex;
+    align-items: center;
+    padding: 3px;
+}
+.report{
+    padding: 5px;
+    text-align:left;
+}
+.real{
+    padding: 5px;
+}
+footer{
+  display:flex;
+  padding-bottom:5px;
+  padding-left:0px ;
+  padding-top: 5px;
+  padding-right: 5px;
+  position:fixed;
+  bottom: 0;
+  left:0 ;
+  background: whitesmoke;
+  width: 100%;
+  justify-content:space-around;
+  height: 50px;
+}
+footer button{
+  height: 100%;
+  width:50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: black;
+  font-size: 24px;
+}
+input{
+    outline: none;
+    border: none;
+}

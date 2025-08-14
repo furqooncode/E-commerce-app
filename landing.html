@@ -5,10 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
+  <link rel="stylesheet" href="landing.css" type="text/css" media="all" />
 </head>
-
 <body>
   
+  
+    <div class="container">
+        <div class="intro">
+            <h1>HEY 👋, WELCOME TO UNKNOWN SITE</h1>
+            <span>Become Your self boss....</span>
+        </div>
+        
+    
+        <div class="choose">
+           <h3>WHO DO YOU WANTS TO BE TODAY</h3>
+            <button id="seller">SELLER</button>
+            <button id="buyer">BUYER</button>
+        </div>
+    </div>
+    
+    <script>
+        const seller = document.getElementById('seller');
+        seller.addEventListener('click', function(){
+            location.href = 'sellersign.html'
+        })
+        
+        const buyer = document.getElementById('buyer');
+        buyer.addEventListener('click', function(){
+            location.href = "buyersign.html"
+        })
+    </script>
+  
 </body>
-
 </html>

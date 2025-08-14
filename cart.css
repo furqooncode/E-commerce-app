@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  background:whitesmoke;
+  color: black;
+}
+.ico{
+  color: #fff;
+  background: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  
+}
+header{
+  display: block;
+  margin-top: 2px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  padding-bottom: 20px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+header h3{
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.cart-search{
+  padding: 10px 0;
+  width: 330px;
+  border: 1px solid grey;
+  background: transparent;
+  border-radius: 20px;
+  margin-top: 25px;
+  outline: none;
+  color: #ffff;
+  padding-left: 12px;
+   box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+   position: relative;
+}
+::placeholder{
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 3px;
+}
+.bik{
+  position: absolute;
+  top: 82px;
+  right: 20px;
+}
+.fa-bell{
+  font-size: 20px;
+}
+img{
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+.image-container{
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 8px;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+.one,
+.two,
+.three,
+.four,
+.five{
+  background: rgba(255, 255, 255, 0.1);
+  width: 160px;
+  border-radius: 5px;
+}
+.whole-container{
+  display: flex;
+ 
+}
+.icon-container{
+  width: 80px;
+  padding: 2px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-container i{
+  color: #000;
+}
+.second{
+  margin-top: 30px;
+}
+.text-container{
+  margin-left: 15px;
+  display: block;
+  
+}
+.first{
+  margin-top: 9px;
+}
+.first span{
+  opacity: 0.5;
+}
+.second span{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.text-container h3{
+  font-family: 'Rubik', sans-serif;
+}
+footer{
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+  height: 12vh;
+  
+  bottom: 0;
+  background:whitesmoke;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+footer button{
+  background: yellowgreen;
+  width: 190px;
+  padding: 20px 0;
+  border: none;
+  border-radius: 60px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 15px;
+  
+}
+footer h3{
+  font-family: 'Rubik', sans-serif;
+  font-size: 25px;
+}
+footer span{
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.cat-1{
+  margin-left: 23px;
+  
+}
+i{
+  color: black;
+}

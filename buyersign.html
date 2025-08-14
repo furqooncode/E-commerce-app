@@ -31,16 +31,15 @@
      <span>Confirm Password</span><br>
       <input type="password" placeholder="Wnsh12/&uv"><i class="fa-solid fa-eye-slash"></i><br>
            
-     <button id="submit">SIGN UP</button>
+     <button onclick="signup()">SIGN UP</button>
            
        </form>
         
     </div>
     <script>
-        const submit = document.getElementById('submit');
-submit.addEventListener('click', function () {
-    location.href = "index.html"
-})
+    function signup() {
+   window.location.href = "index.html"
+}
     </script>
  
   
