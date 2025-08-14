@@ -91,6 +91,10 @@ main{
     bottom: 0;
     font-size: 14px;
 }
+.history:hover{
+    background: lightgray;
+    transition: 0.5s ease-in-out;
+}
 .overview {
     position: relative;
 }
