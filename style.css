@@ -285,7 +285,7 @@ a:hover::before{
 }
 .trendes span{
     color: #000;
-    font-size: 20px;
+    font-size: 16px;
     font-weight:800;
 }
 .trendes img{
@@ -329,6 +329,7 @@ a:hover::before{
     outline:none;
     border:none;
     background: transparent;
+    color: red;
     font-size:24px;
 }
 /* mens cloth */

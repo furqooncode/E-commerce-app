@@ -152,7 +152,7 @@ label{
 }
 .trendes span{
     color: #000;
-    font-size: 20px;
+    font-size: 16px;
     font-weight:800;
 }
 .trendes img{
@@ -197,4 +197,5 @@ label{
     border:none;
     background: transparent;
     font-size:24px;
+    color:red;
 }
