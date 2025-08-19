@@ -72,6 +72,10 @@ body {
     margin-bottom:7px;
     margin: 10px;
 }
+.size button:hover{
+    background:gray;
+    color:white;
+}
 /* pay button */
 .get{
     margin:5px;

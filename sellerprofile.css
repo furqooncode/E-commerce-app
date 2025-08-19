@@ -62,7 +62,9 @@ header .edit{
     right:80px;
     top: 90px;
     color: white;
-    background: red;
+    background: black;
+    padding: 10px;
+    border-radius: 50%;
 }
 .choose input{
     display:none;

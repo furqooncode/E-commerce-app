@@ -13,35 +13,7 @@ body{
     width: 100%;
     height: 100%;
 }
-.nav{
-    position: fixed;
-    z-index: 1000;
-    color:white;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    height: 100%;
-    display:none;
-    transition:1s ease all;
-}
-ul{
-  background: black;
-  text-align:left;
-  top: -15px;
-  margin: 0;
-  padding:10px;
-  width: 60%;
-  height: 100%;
-  display:flex;
-  flex-direction: column;
-  border-radius:0 16px 0 16px;
-}
- a{
-    font-size:20px;
-    text-decoration: none;
-    color:white;
-    margin-bottom: 20px;
-}
+
 header{
  display:flex;
  width:97%;
@@ -52,7 +24,7 @@ header{
  top:0;
  justify-content: space-between;
  background: white;
- z-index:100;
+ z-index:10;
  margin-bottom: 30px;
 }
 .logo{
@@ -80,6 +52,52 @@ header{
   outline: none;
   border-radius: 50px;
   font-size: 20px;
+}
+.sidemenu{
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    width: 70%;
+    background: black;
+    display:grid;
+    height: 100%;
+    border-radius:0 16px 16px 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+}
+.sidemenu ul{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
+    padding-top:20px ;
+}
+a{
+    color:white;
+    text-decoration: none;
+    font-size:16px;
+    font-weight: 600;
+    position: relative;
+    background: none;
+}
+a:hover{
+    background: transparent;
+}
+.sidemenu.show{
+ transform:translateX(0);
+   
+}
+a::before{
+    content:"";
+    position: absolute;
+    background:white;
+    bottom:-2px;
+    height:2px;
+    width:0;
+    transition:width 0.5s ease-in-out;
+}
+a:hover::before{
+    width: 50%;
 }
 /* search bar */
 .searchbar{
@@ -114,87 +132,107 @@ header{
     background: transparent;
 }
 /* image slider */
-.image-slide{
-    
-    background:black;
-    height:250px;
-    display:flex;
-    gap:10px;
-    align-items:center;
-    color:black;
+.carousel-container {
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
-.images{
-    height: 220px;
-    width:40%;
-    margin-left: 10px;
-    border-radius: 16px;
-}
-.images img{
-    height:100%;
-    width: 100%;
-    border-radius: 16px;
-}
-.price{
-    color: white;
-    height: 220px;
-    width: 50%;
-    text-wrap:wrap;
-    padding: 10px;
-    position: relative;
-}
-.name{
-     position: absolute;
-     top:15px;
-}
-.name h3{
-    font-size:20px;
-    color:white;
-    top:0;
-}
-.name p{
-    position: absolute;
-    font-size: 14px;
-    top:35px;
-}
-.name span{
-    background:blue;
 
-    width: 100px;
-    color:white;
-    clip-path:polygon(100% 0%, 80% 50%, 100% 100%, 0 100%, 0 0);
-    position: absolute;
-    top:10px;
-    margin-top:105px;
-    font-size:20px;
-    font-weight:800;
+.carousel-track {
+  display: flex;
+  width: max-content;
 }
-.price .colors button{
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
-   top: 0;
-   border:none;
-   outline:none;
-   background: white;
+
+.image-slide {
+  display: flex;
+  background: #111;
+  height: 220px;
+  width: 100%;
+  min-width: 350px;
+  padding: 10px;
 }
-.choice{
-    position: absolute;
-    bottom: 15px;
-    display: flex;
-    gap:10px;
+
+.images {
+  height: 220px;
+  width: 40%;
+  margin-left: 10px;
+  border-radius: 16px;
 }
-.choice button{
-    width: 87px;
-    height:30px;
-    border:none;
-    outline: none;
-    border-radius: 10px;
-    font-size:12px;
-    font-weight:700;
+
+.images img {
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
 }
-.colors{
-    position: absolute;
-    bottom:50px;
+
+.price {
+  color: white;
+  height: 220px;
+  width: 50%;
+  padding: 10px;
+  position: relative;
+  
+}
+
+.name {
+  position: absolute;
+  top: 15px;
+  width: 200px;
+}
+
+.name h3 {
+  font-size: 20px;
+  color: white;
+}
+
+.name p {
+  position: absolute;
+  font-size: 14px;
+  top: 35px;
+}
+
+.name span {
+  background: blue;
+  width: 100px;
+  color: white;
+  clip-path: polygon(100% 0%, 80% 50%, 100% 100%, 0 100%, 0 0);
+  position: absolute;
+  top: 115px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.price .colors {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  gap: 8px;
+}
+
+.price .colors button {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: white;
+}
+
+.choice {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.choice button {
+  width: 87px;
+  height: 30px;
+ border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 /*  slide bar*/

@@ -1,0 +1,99 @@
+body{
+  font-family: sans-serif;
+  padding:0;
+  margin: 0;
+}
+header{
+  background: whitesmoke;
+}
+.success{
+  width: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 200px;
+}
+.success img{
+  width: 150px;
+  height: 150px;
+}
+.success h4{
+  position: absolute;
+  bottom:-30px;
+  font-size: 30px;
+}
+.success span{
+  position: absolute;
+  bottom:0;
+}
+main{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.review{
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.products{
+  background: black;
+  display: flex;
+  height: 80px;
+  gap: 10px;
+  padding: 5px;
+}
+.each{
+  background: white;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.each img{
+  width: 100%;
+  height: 100%;
+  border-radius:8px;
+}
+.receipt{
+  margin-top: 10px;
+}
+table{
+  width: 100%;
+}
+table th{
+  text-align: start;
+}
+table td{
+  text-align:end;
+}
+.total{
+  font-size: 20px;
+  font-weight: 500;
+}
+.amount{
+  font-size: 24px;
+  font-weight: 700;
+}
+.download{
+  display:grid;
+  height: 100px;
+  gap:10px;
+  padding: 5px;
+  margin-top:10px ;
+}
+.download button{
+  border-radius: 12px;
+  border :none;
+  outline: none;
+  background: black;
+  font-size: 18px;
+  font-weight: 500;
+  color:white;
+}
+
+
+img{
+  height: 30px;
+  width: 30px;
+}

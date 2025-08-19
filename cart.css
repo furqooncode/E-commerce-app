@@ -7,17 +7,20 @@ body{
   font-family: 'Lato', sans-serif;
   background:whitesmoke;
   color: black;
+  
 }
 .ico{
   color: #fff;
-  background: #fff;
+  background: transparent;
   padding: 8px;
   border-radius: 6px;
   
 }
 header{
   display: block;
-  margin-top: 2px;
+  position: fixed;
+  z-index: 1000;
+  background: whitesmoke;
   box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
   padding: 12px;
   padding-bottom: 20px;
@@ -46,7 +49,7 @@ header h3{
    position: relative;
 }
 ::placeholder{
-  color: #fff;
+  color:black;
   font-size: 15px;
   font-weight: bold;
   padding-left: 3px;
@@ -59,66 +62,97 @@ header h3{
 .fa-bell{
   font-size: 20px;
 }
-img{
-  width: 150px;
-  height: 150px;
-  border-radius: 8px;
-}
-.image-container{
-  display: grid;
-  grid-template-rows: 1fr;
-  row-gap: 8px;
-  margin-left: 10px;
-  margin-top: 6px;
-}
-.one,
-.two,
-.three,
-.four,
-.five{
-  background: rgba(255, 255, 255, 0.1);
-  width: 160px;
-  border-radius: 5px;
-}
-.whole-container{
-  display: flex;
- 
-}
-.icon-container{
-  width: 80px;
-  padding: 2px;
-  height: 25px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin-top: 20px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.icon-container i{
-  color: #000;
-}
-.second{
-  margin-top: 30px;
-}
-.text-container{
-  margin-left: 15px;
-  display: block;
+/* main */
+.all{
+  margin-top:130px;
+  position: absolute;
+  height:110%;
+  width: 100%;
   
 }
-.first{
-  margin-top: 9px;
+.items{
+  padding: 5px;
+  display:flex;
+  height: 150px;
+  gap:10px;
 }
-.first span{
-  opacity: 0.5;
+.itemImg{
+  width: 40%;
+  padding:2px;
 }
-.second span{
+.itemImg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.product{
+  width: 40%;
+  display:grid;
+  gap:10px;
+  height: 100%;
+}
+.type{
+  display:grid;
+  height:45px;
+}
+.type span{
+  color:gray;
+  font-size: 16px;
+  font-weight: 500;
+}
+.type p{
+  font-size: 18px;
+  font-weight: 700;
+}
+.price{
+  height:40px;
+  display:grid;
+  align-items: center;
+}
+.price p{
   text-decoration: line-through;
-  opacity: 0.5;
+  color: grey;
 }
-.text-container h3{
-  font-family: 'Rubik', sans-serif;
+.price span{
+  font-size: 24px;
+  font-weight :600;
 }
+.number{
+  height: 40px;
+  display:flex;
+  align-items: center;
+}
+.number {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.number button{
+  width:30px;
+  height: 30px;
+  border-radius: 50%;
+  border:none;
+  outline: none;
+  background: black;
+  color:white;
+  font-size:20px;
+}
+.delete{
+  width: 15%;
+  display:flex;
+  align-items: center;
+}
+.delete button{
+  border:none;
+  outline: none;
+  font-size: 20px;
+  background: transparent;
+}
+.delete button i{
+  color:deepgray;
+}
+/* footer */
 footer{
   box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
   height: 12vh;
@@ -137,7 +171,7 @@ footer{
   
 }
 footer button{
-  background: yellowgreen;
+  background: black;
   width: 190px;
   padding: 20px 0;
   border: none;
@@ -145,7 +179,7 @@ footer button{
   font-size: 17px;
   font-weight: bold;
   margin-right: 15px;
-  
+  color :white;
 }
 footer h3{
   font-family: 'Rubik', sans-serif;
@@ -161,4 +195,9 @@ footer span{
 }
 i{
   color: black;
+}
+button{
+  border:none;
+  outline-color: none;
+  background: transparent;
 }

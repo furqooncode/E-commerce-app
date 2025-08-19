@@ -40,3 +40,7 @@ if (items) {
    let counted = --count;
    num.textContent = counted;
  })
+ 
+ function go(param) {
+   window.location.href = 'checkout.html'
+ }

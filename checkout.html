@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="checkout.css" type="text/css" media="all" />
+</head>
+<body>
+  <div class="box">
+    <header>
+      <div class="back">
+        <button onclick="back()"> <i class="fa-solid fa-arrow-left"></i></button>
+      </div>
+      
+      <div class="title">
+        <span>Checkout</span>
+      </div>
+      <div class="menu">
+        <button onclick="noti()"><i class="fa-regular fa-bell"></i></button>
+      </div>
+    </header>
+    
+    <div class="address">
+      <div class="location">
+        <button><i class="fa-solid fa-location-dot"></i></button>
+      </div>
+      
+      <div class="position">
+        <span>Larry mendel str estate of london indomie</span>
+        <span >Sango -ijoko road off gasline</span>
+        <span >Ogun state-Nigeria</span>
+        <span>+234-000-000-0000</span>
+      </div>
+      
+      <div class="add">
+        <button> <i class="fa-solid fa-angle-right"></i> </button>
+      </div>
+    </div>
+  
+    <main>
+      <div class="summary">
+        <div class="sum">
+    <h4>Order Summary</h4>
+    <span>5 items</span>
+        </div>
+    <div class="order">
+      
+      <div class="order-1">
+   <img src="shoes.jpg" alt="shoes.jpg">
+   <div class="name">
+     <span>$20.00</span>
+   </div>
+      </div>
+      
+            <div class="order-1">
+   <img src="shoes.jpg" alt="shoes.jpg">
+   <div class="name">
+     <span>$50,000.00</span>
+   </div>
+      </div>
+      
+            <div class="order-1">
+   <img src="shoes.jpg" alt="shoes.jpg">
+   <div class="name">
+     <span>$50,000.00</span>
+   </div>
+      </div>
+      
+            <div class="order-1">
+   <img src="shoes.jpg" alt="shoes.jpg">
+   <div class="name">
+     <span>$50,000.00</span>
+   </div>
+      </div>
+      
+            <div class="order-1">
+   <img src="shoes.jpg" alt="shoes.jpg">
+   <div class="name">
+     <span>$50,000.00</span>
+   </div>
+            </div>
+    
+
+    </div>
+      </div>
+      <!--payment-->
+      <div class="payment">
+        <div class="pay">
+         <h3>Payment Method</h3>
+         <span><u>Add</u></span>
+        </div>
+        
+            <div class="card">
+      <div class="card-1">
+   <img src="master.png" alt="shoes.jpg">
+   <div class="name">
+     <span>Master card</span>
+     <p>1234 **** **** </p>
+   </div>
+      </div>
+      
+       <div class="card-1">
+   <img src="verve.png" alt="shoes.jpg">
+   <div class="name">
+     <span>Verve card</span>
+     <p>1234 **** **** </p>
+   </div>
+      </div>
+      
+       <div class="card-1">
+   <img src="visa.png" alt="shoes.jpg">
+   <div class="name">
+     <span>Visa card</span>
+     <p>1234 **** **** </p>
+   </div>
+      </div>
+      
+      </div>
+      
+      </div>
+      
+      <div class="total">
+        <p>Total</p>
+        <span>$3,000.00</span>
+      </div>
+      
+      <div class="submit">
+  <button onclick="confirm()">CONFIRM</button>
+      </div>
+    </main>
+    
+  
+  </div>
+  
+  <script>
+    function back(){
+  window.location.href = 'cart.html'
+    }
+    
+    function noti(){
+      window.location.href = 'notification.html'
+    }
+    
+  function confirm(){
+  window.location.href = 'success.html'
+    }
+  </script>
+</body>
+</html>

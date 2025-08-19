@@ -8,7 +8,7 @@ fetch('https://dummyjson.com/products')
   data.products.forEach(trend => {
     trending.innerHTML += `
     <div class="trendes">
-    <img src="${trend.images[0]}" alt="">
+   <img src="${trend.images[0]}" alt="">
     <span>${trend.title}</span>
       <div class="imgDecs">
      <p>${trend.description}</p>
@@ -26,7 +26,7 @@ fetch('https://dummyjson.com/products')
 
 //mens clothes
 const menClothes = document.getElementById('menClothes')
-fetch('https://dummyjson.com/products?limit=4')
+fetch('https://dummyjson.com/products?limit=12')
 .then(res => res.json())
 .then(data => {
   menClothes.innerHTML = "";
@@ -115,6 +115,30 @@ function noti() {
 }
 
 function menu(param) {
-  const nav = document.getElementById('nav');
-  nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+const sideBar = document.getElementById('sideBar').classList.toggle('show');
+};
+
+
+
+const carousel = document.querySelector('.carousel-container');
+const slides = document.querySelectorAll('.image-slide');
+const slideWidth = slides[0].offsetWidth + 15;
+
+function right() {
+  if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+    carousel.scrollLeft = 0;
+  } else {
+    carousel.scrollBy({ left: slideWidth, behavior: 'smooth' });
+  }
 }
+
+function left() {
+  if (carousel.scrollLeft === 0) {
+    carousel.scrollLeft = carousel.scrollWidth;
+  } else {
+    carousel.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+  }
+}
+setInterval(() => {
+  right();
+}, 3000);

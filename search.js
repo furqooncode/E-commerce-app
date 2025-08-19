@@ -19,3 +19,9 @@ function status(param) {
 function back(param) {
  window.location.href = 'index.html';
 }
+
+
+const seller = document.getElementById('seller');
+seller.addEventListener('click', function (param) {
+  window.location.href = 'details.html'
+})

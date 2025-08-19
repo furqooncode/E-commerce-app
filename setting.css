@@ -18,8 +18,7 @@ header{
     top:0;
     left: 0;
     z-index: 100;
-    background: black;
-    color:white;
+    background: whitesmoke;
 }
 .back{
     width: 40px;
@@ -34,7 +33,6 @@ header{
     font-weight: 700;
     outline:none;
     background : transparent;
-    color:white;
 }
 .sub {
     margin-right:10px;

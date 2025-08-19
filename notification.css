@@ -10,8 +10,8 @@ header{
     width: 100%;
     justify-content: space-between;
     height: 40px;
-    background: black;
-    color:white;
+    background:whitesmoke;
+    
 }
 .back{
     width: 40px;
@@ -26,7 +26,6 @@ header{
     font-weight: 700;
     outline:none;
     background : transparent;
-    color:white;
 }
 .topic {
     margin-right:10px;
@@ -49,7 +48,7 @@ header{
     display:flex;
     width: 96%;
     border-bottom:5px solid whitesmoke;
-    padding: 10px;
+    padding: 5px;
     margin-bottom:2px;
     height: auto;
 }
@@ -67,7 +66,7 @@ header{
 .notes{
     color: #000;
     margin:5px;
-    padding: 10px;
+    padding:5px;
     position: relative;
     overflow:hidden;
     white-space:hidden;
@@ -77,13 +76,14 @@ header{
 .notes h4{
     position: absolute;
     top:-20px;
-    font-size:19px;
+    font-size:16px;
     left: 0;
 }
 .notes p{
     position: absolute;
     left: 0;
     top:12px;
+    font-size: 14px;
 }
 .more{
     height: 100%;
@@ -101,4 +101,6 @@ header{
     border:none;
     outline:none;
     border-radius: 10px;
+    display: flex;
+    align-items:center;
 }

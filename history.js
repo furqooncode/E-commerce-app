@@ -1,12 +1,13 @@
 const selectDate = document.getElementById('selectDate');
+
 selectDate.addEventListener('click', function (param) {
-   document.getElementById('date').style.display = 'block'
+   document.getElementById("date").classList.add("show");
 })
 
 function cancel(param) {
-      document.getElementById('date').style.display = 'none'
+      document.getElementById('date').classList.remove('show')
 }
 
 function confirm(param) {
-        document.getElementById('date').style.display = 'none'
+ document.getElementById('date').classList.remove('show')
 }

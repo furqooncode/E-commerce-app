@@ -15,8 +15,7 @@ header{
     width: 100%;
     justify-content: space-between;
     height: 40px;
-    background: black;
-    color:white;
+    background: whitesmoke;
 }
 .back{
     width: 40px;
@@ -31,7 +30,6 @@ header{
     font-weight: 700;
     outline:none;
     background : transparent;
-    color:white;
 }
 .sub {
     margin-right:10px;
@@ -87,6 +85,9 @@ header{
     border-bottom:5px solid whitesmoke;
     padding: 10px;
     margin-bottom:2px;
+}
+.seller:hover{
+    background: lightgray;
 }
 .image{
     background: black;

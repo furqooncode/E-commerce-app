@@ -1,0 +1,205 @@
+body{
+  margin:0;
+  padding:0;
+  background: whitesmoke;
+  font-family:sans-serif;
+  font-size: 14px;
+}
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  display: flex;
+  background: whitesmoke;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+header button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.title span{
+  font-size: 24px;
+  font-weight: 600;
+  font-family: roboto;
+}
+.address{
+  background: whitesmoke;
+  margin-top:52px;
+  display:flex;
+  height: 80px;
+  gap: 5px;
+  text-wrap: nowrap;
+}
+.location{
+  width:30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location button{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  font-size: 34px;
+  background: black;
+  color:white;
+}
+.position{
+  display:grid;
+  width: 60%;
+  overflow:hidden;
+  position: relative;
+}
+.add{
+  width:10%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.add button{
+  border:none;
+  outline:none;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  background: transparent;
+}
+.summary{
+  position: relative;
+  padding: 10px;
+}
+.sum{
+  display:flex;
+  justify-content: space-between;
+  background: bue;
+  align-items: center;
+  height: 30px;
+}
+.sum span{
+  font-size: 18px;
+  font-weight: 500;
+}
+.order{
+  height: 120px;
+  display:flex;
+  padding: 5px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+}
+.order .order-1{
+  width: 100px;
+  height: 120px;
+  position: relative;
+  text-align: center;
+  flex:0 0 auto;
+  
+}
+.order-1 img{
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+}
+.order-1 .name{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+}
+.name span{
+  font-size: 14px;
+  font-weight: 500;
+}
+.payment{
+  padding: 10px;
+}
+.pay{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pay span{
+  font-size: 18px;
+  font-weight: 500;
+}
+.card{
+  
+  display:flex;
+  padding: 5px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+}
+.card .card-1{
+  width: 200px;
+  height: 130px;
+  position: relative;
+  text-align: start;
+  border-radius: 10px;
+  border: 1px solid black;
+  background:lightgray;
+  flex:0 0 auto;
+}
+.card-1 img{
+  height: 40px;
+  width: 30%;
+}
+.card-1 .name{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+}
+.card-1:hover{
+  border: 2px solid aliceblue;
+  background: gray;
+  transition: 0.5s ease-in-out;
+}
+.total{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+    padding: 5px;
+}
+.total p{
+  font-size:20px;
+  font-weight: 500;
+
+}
+.total span{
+  font-size: 24px;
+  font-weight: 700;
+}
+.submit{
+    
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit button{
+  border:none;
+  outline: none;
+  width: 90%;
+  padding: 10px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight:700;
+  background :black;
+  color:white;
+  letter-spacing: 5px;
+}

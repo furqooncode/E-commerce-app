@@ -21,7 +21,7 @@
 </div>
 
 <div class="menubtn">
-  <div class="cartbtn">
+  <div class="notibtn">
 <button onclick="noti()"> <i class="fa-regular fa-bell"></i></button>
   </div>
   
@@ -31,25 +31,26 @@
 </div>
 </header>
 
-<div id="nav" class="nav">
+<div id="sideBar" class="sidemenu">
   <ul>
-    <a href="#">Home</a>
-<a href="#">Cart</a>
-  <a href="#">Search Seller</a>
-    <a href="#">History</a>
-    <a href="#">Order Review</a>
-        <a href="#">Help</a>
+    <a href="#"><i class="fa-regular fa-house"></i>Home</a>
+<a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+  <a href="#"><i class="fa-solid fa-search"></i>Search Seller</a>
+    <a href="#"><i class="fa-solid fa-notes-medical"></i>History</a>
+    <a href="#"><i class="fa-solid fa-chart-simple"></i>Order Review</a>
+        <a href="#"><i class="fa-regular fa-circle-question"></i>Help</a>
   <a href="#"><i class="fa-regular fa-user"></i>Profile</a>
-  <a href="#">Log out</a>
+  <a href="#"><i class="fa-regular fa-share-from-square"></i>Log out</a>
   </ul>
 </div>
 
 
        
        <!-- button -->
-       <div class="slide-bar">
-           <div class="slideBtn">  <button> < </button> </div>
-            <div class="slideBtn"> <button>></button> </div>
+  <main>
+       <div  class="slide-bar">
+           <div class="slideBtn">  <button onclick="left()"> < </button> </div>
+            <div class="slideBtn"> <button onclick="right()">></button> </div>
        </div>
        
              <!--search-->
@@ -58,30 +59,86 @@
   <button><i class="fa-solid fa-search"></i></button>
 </div>
       <!-- image top -->  
-   
-      <div class="image-slide">
-         <div class="images">
-          <img src="shoes.jpg" alt="">
-         </div> 
-         <div class="price">
-             <div class="name">
-             <h3>AIRSTRIDE RUNNER</h3>
-             <p>   Lightweight running shoes with breathable mesh and cushioned soles.</p>
-             <span>$300.00</span>
-             </div>
-             <div class="colors">
-                 <button></button>
-                 <button></button>
-                 <button></button>
-                 <button></button>
-             </div>
-             <div class="choice">
-                 <button>BUY</button>
-                 <button>ADD TO CART</button>
-             </div>
-         </div>
+<div class="carousel-container">
+  <div class="carousel-track">
+    
+    <!--slide-1-->
+    <div class="image-slide">
+      <div class="images">
+    <img src="shoes.jpg" alt="shoes">
       </div>
+      <div class="price">
+        <div class="name">
+          <h3>AIRSTRIDE RUNNER</h3>
+          <p>Lightweight running shoes with breathable mesh and cushioned soles.</p>
+          <span>300.00</span>
+        </div>
+        <div class="colors">
+          <button style="background: red;"></button>
+          <button style="background: blue;"></button>
+          <button style="background: green;"></button>
+          <button style="background: yellow;"></button>
+        </div>
+        <div class="choice">
+          <button>BUY</button>
+          <button>ADD TO CART</button>
+        </div>
+      </div>
+    </div>
 
+<!--slide-2-->
+    <div class="image-slide">
+      <div class="images">
+        <img src="shoes.jpg" alt="shoes">
+      </div>
+      <div class="price">
+        <div class="name">
+          <h3>FLASH RUNNER</h3>
+          <p>Durable sports shoes with modern styling and all-day comfort.</p>
+          <span>250.00</span>
+        </div>
+        <div class="colors">
+          <button style="background: gray;"></button>
+          <button style="background: orange;"></button>
+ <button style="background: yellow;"></button>
+          <button style="background: navy;"></button>
+        </div>
+        <div class="choice">
+          <button>BUY</button>
+          <button>ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+    
+    <!--slide-3-->
+    
+     <div class="image-slide">
+      <div class="images">
+        <img src="shoes.jpg" alt="shoes">
+      </div>
+      <div class="price">
+        <div class="name">
+          <h3>FLASH RUNNER</h3>
+          <p>Durable sports shoes with modern styling and all-day comfort.</p>
+          <span>250.00</span>
+        </div>
+        <div class="colors">
+          <button style="background: gray;"></button>
+          <button style="background: orange;"></button>
+ <button style="background: yellow;"></button>
+          <button style="background: navy;"></button>
+        </div>
+        <div class="choice">
+          <button>BUY</button>
+          <button>ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!--slide-ends-->
+  </div>
+</div>
 
       <!-- trending -->
      <div class="box">
@@ -89,8 +146,8 @@
   <div id="trending" class="trending">
              
    <!-- <div class="trendes">
-            <img src="shoes.jpg" alt="">
-            <div class="imgDecs">
+        <img src="shoes.jpg" alt="">
+    <div class="imgDecs">
      <p>
   Lightweight running shoes with breathable mesh and cushioned soles.
   Durable sneakers built for city walks and all-day comfort.</p>
@@ -131,7 +188,7 @@
       </div>
       </div>
       
-
+  </div>
       <!-- end -->
       
      <footer>
@@ -148,12 +205,13 @@
   </div>
   
   <div class="faq">
-    <button onclick="status()"><i class="fa-regular fa-truck"></i></button>
+    <button onclick="status()"><i class="fa-solid fa-chart-simple"></i></button>
   </div>
   
   <div class="contact">
     <button onclick="user()"><i class="fa-regular fa-user"></i></button>
   </div>
+  
 </footer>
  
     
