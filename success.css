@@ -111,9 +111,9 @@ img{
 .pop{
   width: 85%;
   height: 40%;
-  background: black;
+  background: floralwhite;
   backdrop-filter:blur(10px) ;
-  color:white;
+  color: black;
   border-radius: 16px;
   position: absolute;
   padding: 10px;
@@ -127,7 +127,7 @@ img{
   outline: none;
   font-size: 24px;
   background: transparent;
-  color: white;
+  color: black;
 }
 .popbody{
   padding: 5px;
@@ -150,12 +150,13 @@ img{
   display: flex;
   align-items: center;
   font-size: 30px;
-  color: white;
+  color: black;
 }
 .comment{
   background: black;
   width: 100%;
   margin-top: 10px;
+  height: 100px;
 }
 .comment textarea{
   font-family: sans-serif;
@@ -163,7 +164,10 @@ img{
   border:none;
   outline: none;
   font-size: 16px;
+  height: 100%;
   font-weight :500;
+  color:black;
+  background: ghostwhite;
 }
 .submit{
   display: flex;
@@ -179,4 +183,6 @@ img{
   font-size: 16px;
   font-weight:500;
   border-radius: 10px;
+  background:black;
+  color :white;
 }
