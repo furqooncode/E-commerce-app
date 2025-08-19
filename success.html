@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <link rel="stylesheet" href="success.css" type="text/css" media="all" />
+ <link rel="stylesheet" href="success.css" type="text/css" media="all" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class="box">
@@ -16,6 +17,40 @@
         <span> Your Order is being Processed </span>
       </div>
     </header>
+    
+    <div id="pop" class="popup">
+      
+        
+    
+      <div class="pop">
+        
+        <div class="pophead">
+          <button onclick="none()">×</button>
+        </div>
+        
+        <div class="popbody">
+        <div class="rate">
+      <button><i class="fa-regular fa-star"></i></button>
+      <button><i class="fa-regular fa-star"></i></button>
+      <button><i class="fa-regular fa-star"></i></button>
+      <button><i class="fa-regular fa-star"></i></button>
+      <button><i class="fa-regular fa-star"></i></button>
+        </div>
+      
+      <div class="comment">
+        <textarea rows="8" cols="40" placeholder="COMMENTS"></textarea>
+      </div>
+      
+      <div class="submit">
+        <button>SUBMIT</button>
+        <span>250 words remaining</span>
+      </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    
     
     <main>
       <div class="review">
@@ -75,5 +110,7 @@
       </div>
     </main>
   </div>
+  
+  <script src="success.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
