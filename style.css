@@ -210,12 +210,16 @@ a:hover::before{
 }
 
 .price .colors button {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   border: none;
+  display: flex;
+  align-items: center;
   outline: none;
-  background: white;
+  background: transparent;
+  font-size: 22px;
+  color:white;
 }
 
 .choice {
