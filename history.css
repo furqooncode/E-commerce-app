@@ -256,9 +256,8 @@ main{
 .time span{
     position: absolute;
     bottom:10px;
-    right: 0;
     left: 0;
-    font-size: 12px;
+    font-size: 10px;
 }
 ::-webkit-scrollbar{
      display:none;
