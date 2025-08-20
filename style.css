@@ -297,7 +297,6 @@ a:hover::before{
     position: relative;
     background:white;
     border-radius: 16px;
-    height: 100%;
 }
 .trendes span{
     color: #000;
