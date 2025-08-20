@@ -319,10 +319,11 @@ a:hover::before{
     transition:1s ease-in-out;
     color: black;
     border-radius: 16px;
+    overflow: hidden;
 }
 .imgDecs p{
     position: absolute;
-    top:19px;
+    top:14px;
 }
 .trendes:hover .imgDecs{
     opacity:1;
