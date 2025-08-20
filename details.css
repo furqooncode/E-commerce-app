@@ -16,7 +16,8 @@ header{
     margin-bottom: 50px;
 }
 header .back{
-    margin-left: 5px;;
+    margin-left: 5px;
+    color:black;
 }
 .back button{
     border:none;
