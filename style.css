@@ -323,7 +323,8 @@ a:hover::before{
 }
 .imgDecs p{
     position: absolute;
-    top:12px;
+    top:18px;
+    font-size: 14px;
 }
 .trendes:hover .imgDecs{
     opacity:1;
