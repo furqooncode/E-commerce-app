@@ -260,3 +260,6 @@ main{
     left: 0;
     font-size: 12px;
 }
+::-webkit-scrollbar{
+     display:none;
+}

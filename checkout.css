@@ -203,3 +203,6 @@ header button{
   color:white;
   letter-spacing: 5px;
 }
+::-webkit-scrollbar{
+   display:none;
+}

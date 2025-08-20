@@ -516,3 +516,6 @@ footer button{
   font-size: 24px;
   background : transparent;
 }
+::-webkit-scrollbar{
+     display:none;
+}
