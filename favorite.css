@@ -120,7 +120,7 @@ main{
 .favtext .text{
   position: absolute;
   bottom: 20px;
-  height:55px;
+  height:50px;
   overflow: hidden;
 }
 .favtext h4{
@@ -159,6 +159,7 @@ main{
   border:none;
   outline: none;
   background: transparent;
+  font-size: 16px;
 }
 .like{
   width:10%;
