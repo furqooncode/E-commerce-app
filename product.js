@@ -44,3 +44,6 @@ if (items) {
  function go(param) {
    window.location.href = 'checkout.html'
  }
+ 
+ const product = document.getElementById('product')
+ localStorage.setItem('theme', product)

@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body onload="show()">
+<body id="index" >
   
   
 <div class="container">
@@ -32,14 +32,15 @@
 </header>
 
 <div id="sideBar" class="sidemenu">
-  <ul>
-    <a href="#"><i class="fa-regular fa-house"></i>Home</a>
-<a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
-  <a href="#"><i class="fa-solid fa-search"></i>Search Seller</a>
-    <a href="#"><i class="fa-solid fa-notes-medical"></i>History</a>
-    <a href="#"><i class="fa-solid fa-chart-simple"></i>Order Review</a>
+  <ul class="view">
+    <li><a href="index.html"><i class="fa-regular fa-house"></i>Home</a></li>
+ <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+  <a href="search.html"><i class="fa-solid fa-search"></i>Search Seller</a>
+    <a href="history.html"><i class="fa-solid fa-notes-medical"></i>History</a>
+    <a href="status.html"><i class="fa-solid fa-chart-simple"></i>Order Review</a>
+  <a href="favorite.html"><i class="fa-solid fa-heart"></i>favorite</a>
         <a href="#"><i class="fa-regular fa-circle-question"></i>Help</a>
-  <a href="#"><i class="fa-regular fa-user"></i>Profile</a>
+  <a href="setting.html"><i class="fa-regular fa-user"></i>Profile</a>
   <a href="#"><i class="fa-regular fa-share-from-square"></i>Log out</a>
   </ul>
 </div>
@@ -165,7 +166,7 @@
       <!-- mens clothes  -->
       <div class="pot">
           <h3><u>#PRODUCTS</u></h3>
-   <div id="menClothes" class="clothes">
+  <div id="menClothes" class="clothes">
               
   <!--   <div class="start">
             <img src="shoes.jpg" alt="">
@@ -187,10 +188,34 @@
            
       </div>
       </div>
-      
-  </div>
+  
+  <!--womenclothes-->
+        <div class="pot">
+          <h3><u>#WOMENCLOTHES</u></h3>
+   <div id="womenClothes" class="clothes">
+              
+  <!--   <div class="start">
+            <img src="shoes.jpg" alt="">
+            <div class="fav">
+            <button><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="clothesPrice">
+            <p>$300.00</p>
+   </div>
+    <div class="clothesType">
+           <h4>SNICKER SNIPER AIRSTRIDE RUNNER</h4>
+           <button class="btn-1">Buy Now</button>
+           <button class="btn-2">Add to cart</button>
+   </div>
+   <div class="clothesDecs">
+         <p>lorem Lightweight running shoes with breathable mesh and cushioned soles.</p>
+   </div>
+   </div>   -->
+           
+      </div>
+      </div>
       <!-- end -->
-      
+  </main>
      <footer>
   <div class="home">
 <button onclick="home()"><i class="fa-regular fa-house"></i></button>

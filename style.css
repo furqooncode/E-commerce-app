@@ -55,22 +55,32 @@ header{
 }
 .sidemenu{
     position: fixed;
-    z-index: 1000;
+    z-index: 100;
     top:0;
-    width: 70%;
-    background: black;
+    width: 100%;
     display:grid;
     height: 100%;
     border-radius:0 16px 16px 0;
     transform: translateX(-100%);
     transition: transform 0.4s ease;
+    margin: 0;
 }
-.sidemenu ul{
+.sidemenu .view{
     display:flex;
     flex-direction: column;
+    position: absolute;
+    justify-content:flex-start;
     gap: 20px;
+    top: -17px;
     text-align: start;
+    width: 70%;
+    height: 100%;
     padding-top:20px ;
+    background: black;
+}
+ul li{
+    list-style:none;
+    position: relative;
 }
 a{
     color:white;
@@ -78,10 +88,7 @@ a{
     font-size:16px;
     font-weight: 600;
     position: relative;
-    background: none;
-}
-a:hover{
-    background: transparent;
+    padding: 0;
 }
 .sidemenu.show{
  transform:translateX(0);
@@ -97,7 +104,7 @@ a::before{
     transition:width 0.5s ease-in-out;
 }
 a:hover::before{
-    width: 50%;
+    width: 20%;
 }
 /* search bar */
 .searchbar{
@@ -136,6 +143,8 @@ a:hover::before{
   width: 100%;
   overflow-x: auto;
   scroll-behavior: smooth;
+  scroll-snap-type:x mandatory;
+  
 }
 
 .carousel-track {
@@ -150,6 +159,8 @@ a:hover::before{
   width: 100%;
   min-width: 350px;
   padding: 10px;
+  
+  scroll-snap-align: start;
 }
 
 .images {
@@ -244,7 +255,7 @@ a:hover::before{
     display:flex;
     height: 40px;
     position: absolute;
-    z-index:10;
+    z-index:1;
     width: 100%;
     justify-content:space-between;
     top:200px;
@@ -337,6 +348,9 @@ a:hover::before{
     font-size:24px;
 }
 /* mens cloth */
+main{
+    margin-bottom:55px;
+}
 .pot{
     padding: 5px;
 }
@@ -344,7 +358,7 @@ a:hover::before{
     display:flex;
     flex-wrap:wrap;
     gap:10px;
-    margin-bottom:55px;
+    
 }
 .start{
     width: 170px;
@@ -378,6 +392,28 @@ a:hover::before{
     font-size:24px;
 }
 .fav button i{
+    color :red;
+    height: 100%;
+    width: 100%;
+}
+.start .favo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height:40px;
+    width: 40px;
+    background: none;
+}
+.favo button{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    outline:none;
+    border:none;
+    background: none;
+    font-size:24px;
+}
+.favo button i{
     color :red;
     height: 100%;
     width: 100%;

@@ -8,3 +8,4 @@ window.location.href = 'buyerprofile.html'
 function back(param) {
   window.location.href = 'index.html'
 }
+
