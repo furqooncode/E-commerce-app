@@ -21,8 +21,9 @@ header{
   padding: 3px;
 }
 header img{
-  height:100%;
-  width: 50px;
+  height:100px;
+  width: 100px;
+
 }
 main{
   padding:5px;

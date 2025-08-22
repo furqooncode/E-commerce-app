@@ -8,10 +8,17 @@ body {
 .sign{
     text-align:center;
 }
+.sign img{
+    width: 100px;
+    height: 100px;
+}
 .boxer{
     display:flex;
     align-items:center;
     height: 100vh;
+    background: url("bg.jpg")center;
+    background-size:130% 200%;
+    
 }
 form{
     width: 90%;
@@ -19,17 +26,22 @@ form{
     border:1px solid black;
     padding:10px;
     border-radius:10px;
+    box-shadow: 0px 0px 30px(227, 228, 236, 0.37);
+    backdrop-filter: blur(30px);
+    background:rgba(255, 255, 255, 0.1) ;
 }
 form input{
     padding: 10px;
     width: 90%;
+    border: none;
     margin-bottom:12px;
-    border:1px solid black ;
+    border-bottom:1px solid black ;
     border-radius:16px;
     font-size:18px;
     font-weight:400;
     outline:none;
     border-radius: 16px;
+    background: transparent;
 }
 form span{
     font-size:16px;
