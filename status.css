@@ -161,6 +161,9 @@ main{
 .real{
     padding: 5px;
 }
+.confirm{
+    margin-top: -5px;
+}
 footer{
   display:flex;
   padding-bottom:5px;
