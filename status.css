@@ -67,7 +67,7 @@ main{
 .recent h3{
     position: absolute;
     top:-15px;
-    
+    left:5px;
 }
 .recent table{
     text-align:left;
@@ -82,6 +82,7 @@ main{
 .history h3{
     position: absolute;
     top:-15px;
+    left:5px;
 }
 .history table{
     text-align:left;
@@ -100,6 +101,7 @@ main{
 .overview h3{
     position: absolute;
     top:-15px;
+    left:5px;
 }
 .overview table{
     text-align:left;
@@ -135,6 +137,7 @@ main{
 .purchases h3{
     position: absolute;
     top:-15px;
+    left:5px;
 }
 .got{
     position: relative;
@@ -142,6 +145,7 @@ main{
 .got h3{
     position: absolute;
     top:-15px;
+    left:5px;
 }
 .got table{
     text-align:left;
