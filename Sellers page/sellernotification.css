@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    height: 40px;
+    background:whitesmoke;
+    
+}
+.back{
+    width: 40px;
+    height:100%;
+    display: flex;
+}
+.back button{
+    width: 100%;
+    height: 100%;
+    border:none;
+    font-size: 20px;
+    font-weight: 700;
+    outline:none;
+    background : transparent;
+}
+.topic {
+    margin-right:10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.topic p{
+    font-size: 20px;
+}
+.title{
+    margin-top:50px;
+    margin-bottom:-10px;
+}
+.title p{
+    font-size:18px;
+    font-weight:600;
+}
+.notice{
+    display:flex;
+    width: 96%;
+    border-bottom:5px solid whitesmoke;
+    padding: 5px;
+    margin-bottom:2px;
+    height: auto;
+}
+.image{
+    background: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+.notes{
+    color: #000;
+    margin:5px;
+    padding:5px;
+    position: relative;
+    overflow:hidden;
+    white-space:hidden;
+    text-wrap: nowrap;
+    width:68%;
+}
+.notes h4{
+    position: absolute;
+    top:-20px;
+    font-size:16px;
+    left: 0;
+}
+.notes p{
+    position: absolute;
+    left: 0;
+    top:12px;
+    font-size: 14px;
+}
+.more{
+    height: 100%;
+    width: 10%;
+    display:flex;
+    align-items:center;
+}
+.more button{
+    width: 100%;
+    padding: 8px;
+    background: black;
+    color: white;
+    font-size:18px;
+    font-weight:700;
+    border:none;
+    outline:none;
+    border-radius: 10px;
+    display: flex;
+    align-items:center;
+}

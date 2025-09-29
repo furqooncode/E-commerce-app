@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div class="box">
+  
+  <div class="all" id="delete">
+    
+  <div class="deletor">
+    <div class="back">
+      <button onclick="stop()">back</button>
+      <span>01</span>
+    </div>
+    
+    <div class="delete">
+      <button>del</button>
+    </div>
+  </div>
+  </div>
+ 
+ <header>
+   <div class="left">
+     <span>Dashboard</span>
+   </div>
+   
+   <div class="right">
+     <div class="noti">
+       <button>not</button>
+     </div>
+     
+     <div class="pics">
+     <img src="picture.jpeg" alt="" />
+   </div>
+   </div>
+   
+ </header>
+ <!--sections-->
+ <!--bars-->
+ <section class="bars">
+   <div class="content">
+      <div class="head">
+        <h3>Total products(stock)</h3>
+      </div>
+     <div class="icon">
+       <img src="picture.jpeg" alt="" />
+     </div>
+     <div class="number">
+       <span>100k </span>
+     </div>
+   </div>
+   
+   <div class="content">
+      <div class="head">
+        <h3>Total Orders</h3>
+      </div>
+     <div class="icon">
+       <img src="picture.jpeg" alt="" />
+     </div>
+     <div class="number">
+       <span>500 </span>
+     </div>
+   </div>
+   
+   <div class="content">
+      <div class="head">
+        <h3>Total Followers</h3>
+      </div>
+     <div class="icon">
+       <img src="picture.jpeg" alt="" />
+     </div>
+     <div class="number">
+       <span>30k</span>
+     </div>
+   </div>
+
+    <div class="content">
+      <div class="head">
+        <h3>Orders notification</h3>
+      </div>
+     <div class="icon">
+   <img src="picture.jpeg" alt=""/><br />
+       <span>No notification yet</span>
+       
+     </div>
+     <div class="number">
+       <span>0 notification</span>
+     </div>
+   </div>
+   
+   <!--new order
+   <div class="content">
+      <div class="head">
+        <h3>Orders notification</h3>
+      </div>
+     <div class="icon">
+       <span>You have a new order</span>
+     </div>
+     <div class="number">
+       <span>99+ new notification</span>
+     </div>
+   </div>-->
+ </section>
+ 
+ <!--products-->
+ <section class="start">
+   <div class="prohead">
+     <div class="headname">
+       <span><u>All Products<b>(100k)</b></u></span>
+     </div>
+     
+     <div class="headbtn">
+       <button onclick="edit()">Add product</button>
+     </div>
+   </div>
+   
+   <!--search product-->
+   <div class="search">
+     <input type="text" placeholder="search your products"/>
+   </div>
+   
+   <!--note-->
+   <div class="note">
+     <p>click on each products to edit</p>
+   </div>
+ </section>
+ 
+ <!--product list-->
+ <section class="product">
+   <div class="date">
+     <span>Today</span>
+   </div>
+   
+   
+<div class="item" id="product">
+   <div class="item-image" >
+       <img src="picture.jpeg" alt="" />
+     </div>
+     
+     <div class="item-title">
+    <h3>Snickers</h3>
+    <span>description goes here even if its longer it wont show because it'll be hidden</span>
+     </div>
+     
+     <div class="item-price">
+       <h4>$400.00</h4>
+       <span>0.00% off</span>
+       <p>4:02 Am</p>
+     </div>
+   </div>
+   
+   
+ </section>
+ 
+
+ <footer>
+   <div class="home">
+     <button>home</button>
+   </div>
+   
+    <div class="home">
+    <button>ana</button>
+   </div>
+   
+    <div class="home">
+     <button>orde</button>
+   </div>
+   
+    <div class="home">
+    <button>his</button>
+   </div>
+   
+    <div class="home">
+     <button>sett</button>
+   </div>
+ </footer>
+</div>
+
+<script src="dashboard.js" type="text/javascript" charset="utf-8">
+  
+</script>
+</body>
+</html>

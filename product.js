@@ -42,7 +42,7 @@ if (items) {
  })
  
  function go(param) {
-   window.location.href = 'checkout.html'
+   window.location.href = 'cart.html'
  }
  
  const product = document.getElementById('product')

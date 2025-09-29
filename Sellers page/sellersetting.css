@@ -1,0 +1,200 @@
+body {
+    padding: 0;
+    margin:0;
+    height: 100vh;
+    font-family: sans-serif;
+}
+main{
+    margin-top:35px;
+    position: relative;
+    height: 80%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height:40px;
+    top:0;
+    left: 0;
+    z-index: 100;
+    background: whitesmoke;
+}
+.back{
+    width: 40px;
+    height:100%;
+    display: flex;
+}
+.back button{
+    width: 100%;
+    height: 100%;
+    border:none;
+    font-size: 20px;
+    font-weight: 700;
+    outline:none;
+    background : transparent;
+}
+.sub {
+    margin-right:10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.sub p{
+    font-size: 22px;
+}
+.profile{
+    display:flex;
+    width: 93%;
+    height: 60px;
+    border-bottom:5px solid whitesmoke;
+    padding: 10px;
+    margin-bottom:2px;
+}
+.profile:active{
+    background: lightgray;
+    transition:0.1s ease-in-out;
+}
+.profileimage{
+    background: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.profileimage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+.profilename{
+    color: #000;
+    margin:5px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    white-space:hidden;
+    text-wrap: nowrap;
+    width:55%;
+}
+.profilename h4{
+    position: absolute;
+    top:-20px;
+    font-size:18px;
+    left: 0;
+}
+.profilename p{
+    position: absolute;
+    left: 0;
+    bottom:-12px;
+}
+.edit{
+    height: 100%;
+    width: 20%;
+    display:flex;
+    align-items:center;
+}
+.edit button{
+    width: 100%;
+    padding: 8px;
+    background: black;
+    color: white;
+    font-size:18px;
+    font-weight:700;
+    border:none;
+    outline:none;
+    border-radius: 10px;
+}
+
+
+/*  */
+.setting {
+    display:flex;
+    width:100%;
+    height: 60px;
+    border-bottom:5px solid whitesmoke;
+    margin-bottom:2px;
+}
+.setting:active{
+    background: lightgray;
+}
+.set{
+    color: #000;
+    margin:5px;
+    padding: 10px;
+    position: relative;
+    overflow:hidden;
+    white-space:hidden;
+    text-wrap:nowrap;
+    width:80%;
+}
+.set h4{
+    position: absolute;
+    top:-20px;
+    font-size:16px;
+    left: 0;
+}
+.set p{
+    position: absolute;
+    left: 0;
+    bottom:-12px;
+}
+.toggler{
+    width: 30%;
+    display:flex;
+    align-items:center;
+    margin: 5px;
+    padding: 5px;
+}
+.toggle{
+    width: 100%;
+    color: white;
+    border:none;
+    outline:none;
+  
+}
+input{
+    display:none;
+}
+.button{
+    width: 80px;
+    display:inline-block;
+    height: 40px;
+    background: gray;
+    border-radius: 200px;
+    position: relative;
+    transition:0.5s ease;
+    
+}
+.button::before{
+    position: absolute;
+    content:'';
+    background: whitesmoke;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin:3px;
+}
+input:checked + .button{
+    background: black;
+}
+input:checked + .button::before{
+    transform:translate(36px);
+    transition:0.5s ease;
+    background: whitesmoke;
+}
+
+.go{
+     width: 10%;
+    display:flex;
+    align-items:center;
+    margin: 5px;
+    padding: 5px;
+}
+.go button{
+    width: 100%;
+    height: 100%;
+    border:none;
+    outline:none;
+    background: transparent;
+    font-size:20px;
+}

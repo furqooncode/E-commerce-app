@@ -66,7 +66,7 @@ header h3{
 .all{
   margin-top:130px;
   position: absolute;
-  height:110%;
+  height:115%;
   width: 100%;
   
 }
@@ -75,6 +75,7 @@ header h3{
   display:flex;
   height: 150px;
   gap:10px;
+  margin-bottom: 10px;
 }
 .itemImg{
   width: 40%;
