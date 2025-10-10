@@ -8,18 +8,7 @@ const pricer = document.getElementById('pricer');
 const images = document.getElementById('images')
 
 
-const items = JSON.parse(localStorage.getItem('items')) || [];
 
-if (items) {
-  description.textContent = items.description;
-   image.src = items.image;
-   name.textContent = items.title;
-   namer.textContent = items.title;
- pricer.textContent = "$" + items.price;
-   price.textContent = "$" + items.price;
-   images.src = items.image;
- }
- 
  
  const plus = document.getElementById('plus');
  const minus = document.getElementById('minus')
