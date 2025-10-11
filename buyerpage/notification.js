@@ -9,5 +9,5 @@ let real = document.getElementById('real')
 }
 
 function back() {
-  window.location.href = 'index.html';
+  window.location.href = '../index.html';
 }
