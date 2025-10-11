@@ -41,3 +41,7 @@ console.log('empty')
      alert('profile saved');
 }
 }
+
+function back(param) {
+  window.location.href = '../index.html'
+}

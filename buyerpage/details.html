@@ -7,14 +7,16 @@
   <title></title>
   
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="details.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="details.css" />
 </head>
 <body>
   <div class="box">
          <!-- header -->
     <header>
         <div class="back">
-<button><i class="fa-solid fa-arrow-left"></i></button>
+<button onclick="back()">
+<i class="fa-solid fa-arrow-left"></i>
+  </button>
         </div>
         
   
@@ -107,5 +109,11 @@
         </div>
       <!--end-->
   </div>
+  
+  <script>
+    function back(){
+      window.location.href = 'search.html'
+    }
+  </script>
 </body>
 </html>
