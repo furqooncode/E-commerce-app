@@ -1,7 +1,7 @@
 const buyBtn = document.querySelectorAll('.btn-1');
 buyBtn.forEach(btn => {
   btn.addEventListener('click', function(param) {
-    window.location.href = 'product.html'
+    window.location.href = 'buyerpage/product.html'
   })
 })
 /* functions */
@@ -10,22 +10,22 @@ function home (param) {
   window.location.href = 'index.html'
 }
 function user(param) {
-  window.location.href = 'setting.html'
+  window.location.href = 'buyerpage/setting.html'
 }
 function find(param) {
- window.location.href = 'search.html'
+ window.location.href = 'buyerpage/search.html'
 }
 
 function cart(param) {
-  window.location.href = 'cart.html'
+  window.location.href = 'buyerpage/cart.html'
 }
 
 function status(param) {
-  window.location.href = 'status.html'
+  window.location.href = 'buyerpage/status.html'
 }
 
 function noti() {
-  window.location.href = 'notification.html'
+  window.location.href = 'buyerpage/notification.html'
 }
 const sideBar = document.getElementById('sideBar')
 function menu(param) {
