@@ -11,17 +11,89 @@ header{
   display: flex;
   align-items: center;
   z-index: 100;
-  height:50px;
+  height:40px;
   background: white;
   top:0;
   left:0;
+}
+.multiple{
+  position: fixed;
+  top: 50px;
+  background: white;
+  z-index: 100;
+  width: 100%;
+  height: 30px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-between;
+}
+.product-labels{
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  gap: 10px;
+  width: 85%;
+}
+.product-labels label{
+  
+  background: black;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.new{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.new button{
+  background: black;
+  color: white;
+  padding: 10px;
+  border:none;
+  outline: none;
+  width: 90px;
+  margin-right:10px ;
+}
+
+.slider {
+  position:relative;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider .first, .slider .second, .slider .third{
+  display: none;
+}
+
+#product1:checked ~ .first{
+  display: block;
+}
+
+#product2:checked ~ .second {
+  display: block;
+}
+
+#product3:checked ~ .third{
+  display: block;
+}
+
+aside{
+  display:noe;
 }
 .preview{
   width: 100%;
   height: 360px;
   margin-top:60px ;
   position: relative;
-  background: red;
 }
 .preview label{
   background: black;
@@ -48,6 +120,7 @@ header{
 form{
   width:97%;
   padding:5px;
+  margin-bottom: 50px;
 }
 form .just{
   padding:5px;
@@ -58,17 +131,6 @@ form .just{
 form span{
   text-transform: uppercase;
 }
-form button{
-  border: none;
-  outline: none;
-  border-radius: 12px;
-  font-size: 18px;
-  font-weight: 600;
-  background: black;
-  color: white;
-  padding: 10px;
-  width: 98%;
-}
 .type{
   display:flex;
   margin-top: -10px;
@@ -78,4 +140,28 @@ textarea{
   font-size: 15px;
   font-family: sans-serif;
   outline: none;
+}
+
+/* asides */
+footer{
+  position: fixed;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5;
+}
+footer button{
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  background: black;
+  color: white;
+  padding: 10px;
+  width: 95%;
 }
