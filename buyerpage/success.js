@@ -9,3 +9,11 @@ window.addEventListener('load', function (param) {
 function none(param) {
   pop.style.opacity = '0';
 }
+
+function submit(param) {
+    pop.style.opacity = '0';
+}
+
+function continuer(e) {
+  window.location.href = '../index.html'
+}

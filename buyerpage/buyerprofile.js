@@ -2,13 +2,10 @@ const profilepics = document.getElementById("profile");
 const photo = document.getElementById("photo");
 const name = document.getElementById("name");
 const number = document.getElementById("number");
-const company = document.getElementById("company");
 const mail = document.getElementById("mail");
-const selling = document.getElementById("selling");
 const country= document.getElementById("country");
 const state = document.getElementById("state");
 const address = document.getElementById("address");
-const bio = document.getElementById('bio')
 
 
 photo.onchange = function () {
@@ -18,13 +15,10 @@ photo.onchange = function () {
 function edit() {
     name.removeAttribute("readonly");
    number.removeAttribute("readonly");
-   company.removeAttribute("readonly");
   mail.removeAttribute("readonly");
  country.removeAttribute("readonly");
  state.removeAttribute("readonly");
  address.removeAttribute("readonly");
- selling.removeAttribute("readonly");
- bio.removeAttribute("readonly")
       
     alert('Edit profile')
 }
@@ -32,24 +26,22 @@ function edit() {
 function save(event) {
 if( name.value === '' ||
 number.value === '' ||
-company.value === '' ||
 mail.value === '' ||
 country.value === '' ||
-selling.value === '' ||
 address.value === '' ||
-state.value === '' ||
-bio.value === ''){
+state.value === ''){
 console.log('empty')
 }else{
     name.setAttribute('readonly', true)
     number.setAttribute('readonly', true)
- company.setAttribute('readonly', true)
  mail.setAttribute('readonly', true)
   country.setAttribute('readonly', true)
     state.setAttribute('readonly', true)
   address.setAttribute('readonly', true)
-  selling.setAttribute('readonly', true)
-  bio.setAttribute('readonly', true)
      alert('profile saved');
 }
+}
+
+function back(param) {
+  window.location.href = '../index.html'
 }

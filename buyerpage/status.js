@@ -1,5 +1,5 @@
 function home (param) {
-  window.location.href = 'index.html'
+  window.location.href = '../index.html'
 }
 function user(param) {
   window.location.href = 'setting.html'
@@ -17,7 +17,7 @@ function status(param) {
 }
 
 function back(param) {
-  window.location.href = 'index.html'
+  window.location.href = '../index.html'
 }
 
 const history = document.getElementById('history');

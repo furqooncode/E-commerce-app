@@ -1,5 +1,5 @@
 function home (param) {
-  window.location.href = 'index.html'
+  window.location.href = '../index.html'
 }
 function user(param) {
   window.location.href = 'setting.html'
