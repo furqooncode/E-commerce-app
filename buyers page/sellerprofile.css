@@ -1,123 +1,461 @@
+* {
+  font-family: "Arimo", sans-serif, "Roboto", "Lato";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    background: whitesmoke;
-    margin:0;
-    padding: 0;
+  background: rgb(51, 51, 51);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.box{
-    
+
+.container {
+  width: 70%;
+  padding: 0 0.5rem;
+  background: #000;
 }
-/* header */
-header{
-    display:flex;
-    justify-content:space-between;
-    height: 30px;
-    background: white;
+
+header {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0.8rem;
+  box-shadow: 0 3px 8px rgba(60, 60, 60, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #000;
 }
-header .back{
-    margin-left: 5px;;
+
+header h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
-.back button{
-    border:none;
-    outline:none;
-    height: 100%;
-    width: 50px;
-    font-size:20px;
-    font-weight:600;
-    background: transparent;
+
+.fa-bars {
+  font-size: 23px;
+  color: white;
 }
-header .edit{
-    margin-right: 5px;
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 10% 0 10px;
 }
-.edit button{
-    border:none;
-    outline:none;
-    height: 100%;
-    width: 50px;
-    font-size:16px;
-    font-weight:600;
-    background: transparent;
+
+.image-container {
+  width: 100%;
 }
-/* profile */
-.profile-pics{
-   background: white;
-    display:grid;
-    place-items:center;
-    padding: 10px;   
-    position: relative;
+
+.image-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: darkorange red orange;
 }
-.pics{
-    background: whitesmoke;
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    
+
+.follow-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 10px;
 }
-.pics img{
-    width: 100%;
-    height: 100%;
-    clip-path:circle(50%);
+.following,
+.followers,
+.Posts {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 10px;
 }
-.choose{
-    position: absolute;
-    right:80px;
-    top: 90px;
-    color: white;
-    background: black;
-    padding: 10px;
-    border-radius: 50%;
+
+.follow-part p {
+  font-size: 15px;
+  font-weight: bold;
 }
-.choose input{
-    display:none;
+
+.follow-part h3 {
+  font-weight: bold;
+  font-size: 18px;
 }
-.info{
-    height: 50px;
+
+.description {
+  margin: 10px 0 10px 20px;
+}
+
+.name {
+  display: flex;
+}
+
+.name h3 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+
+.country {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.country p {
+  font-size: 16px;
+}
+
+.verified {
+  width: 30px;
+  height: 30px;
+}
+
+.bio {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.link {
+  margin-top: 3px;
+  display: flex;
+}
+
+.link-icon {
+  color: red;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+a:hover {
+  color: blue;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  outline: none;
+  height: 40px;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.first-button {
+  background: darkorange;
+  border: none;
+}
+.second-button {
+  background: transparent;
+  border: 1px solid white;
+}
+
+.first-button:hover {
+  background: orangered;
+  border: 1px solid white;
+}
+
+.second-button:hover {
+  background: darkorange;
+  border: none;
+}
+
+.top-picks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 0 30px;
+  position: relative;
+}
+
+.top-picks i {
+  font-size: 25px;
+}
+
+.top-picks::after {
+  content: "";
+  color: #fff;
+  height: 2px;
+  width: 50px;
+  background: white;
+  position: absolute;
+  top: 28px;
+  left: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+  row-gap: 10px;
+  overflow-y: auto;
+  padding: 0 10px;
+}
+
+.product {
+  width: 200px;
+  height: 320px;
+  background: #fff;
+  border-radius: 16px;
+  position: relative;
+  color: #000;
+  box-shadow: 0 3px 10px rgba(84, 84, 84, 0.05);
+  transition: all 0.3s ease;
+  display: grid;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+  background: whitesmoke;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.icons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #e5e7eb;
+  padding: 10px 0;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: black;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.icon-group i {
+  font-size: 0.9rem;
+}
+
+.icon-group:hover {
+  color: #f59e0b;
+  transform: scale(1.1);
+}
+
+.icon-group p {
+  margin: 0;
+}
+
+.product-name {
+  font-size: 18px;
+  margin-left: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.carts {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 43px;
+  background: blue;
+  color: #fff;
+  border: 6px solid #c5c5fd;
+}
+
+.carts:hover {
+  background: darkblue;
+  cursor: pointer;
+}
+
+.rate {
+  position: absolute;
+  bottom: 100px;
+  right: 5px;
+}
+
+.fa-star {
+  color: darkorange;
+  font-size: 14px;
+}
+
+.many {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tag {
+  position: absolute;
+  inset: 0;
+  background: darkorange;
+  clip-path: polygon(100% 0, 80% 50%, 100% 100%, 0 100%, 0 0);
+  height: 30px;
+  border-top-left-radius: 5px;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 240px;
+}
+
+.tag p {
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+}
+
+/* =========================
+   RESPONSIVENESS SECTION
+   ========================= */
+
+@media (max-width: 1200px) {
+  .container {
     width: 80%;
-    text-align:center;
-    padding:10px;
-    position: relative;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .buttons button {
+    width: 160px;
+    font-size: 15px;
+  }
 }
-.info span{
-    font-size:24px;
-    font-weight:600;
-}
-.info p{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 3px;
-}
-/* form */
-form{
-    padding: 10px;
-   
-}
-form input{
-    width:90%;
-    background: none;
-    padding: 10px;
-    border:none;
-    outline:none;
-    font-size:18px;
-    font-weight:400;
-    border-bottom:10px solid white;
-    margin-bottom:10px;
-}
-form span{
-    font-weight:500;
-    font-size:18px;
-}
-::placeholder{
-    font-size:18px;
-    font-weight:400;
-}
-.submit{
-    padding: 10px;
-}
-form button{
+
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+  header {
+    padding: 1rem;
+  }
+
+  .profile {
+    margin: 20px 0;
+  }
+
+  .image-container {
     width: 100%;
-    height: 40px;
-    border:none;
-    background: black;
-    border-radius: 16px;
-    color: white;
+  }
+
+  .follow-part {
+    width: 80%;
+    margin-top: 5px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .buttons button {
+    width: 85%;
+  }
 }
+
+/* For mobile screens (max width 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  header h3 {
+    font-size: 18px;
+  }
+
+  .image-container img {
+    width: 80px;
+    height: 80px;
+  }
+  .follow-part {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .following,
+  .followers,
+  .Posts {
+    gap: 7px;
+  }
+  .follow-part p {
+    font-size: 13px;
+    font-weight: 500px;
+  }
+  .follow-part h3 {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .profile {
+    justify-content: space-between;
+    margin: 5px 10px 0 10px;
+  }
+  .description {
+    margin: 10px 5px 10px 5px;
+  }
+  .name h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .country p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .verified {
+    width: 25px;
+    height: 25px;
+  }
+  .bio {
+    font-size: 13px;
+  }
+  a {
+    font-size: 13px;
+  }
+  .buttons {
+    justify-content: space-between;
+    margin-left: 5px;
+  }
+  .top-picks i {
+    font-size: 20px;
+  }
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;
+  }
+}
+

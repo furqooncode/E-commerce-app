@@ -1,402 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body id="index" >
-  
-  
-<div class="container">
-	
-     
-     <!-- header -->   
-    <header>
-<div class="logo">
-  <img src="logo.png" alt="" />
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<div class="menubtn">
-  <div class="notibtn">
-<button onclick="noti()"> <i class="fa-regular fa-bell"></i></button>
-  </div>
-  
-  <div class="menu">
-    <button onclick="menu()"><i class="fa-solid fa-bars"></i></button>
-  </div>
-</div>
-</header>
+  <body id="index">
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="logo">
+          <img src="logo.png" alt="" />
+        </div>
 
-<div id="sideBar" class="sidemenu">
-  <ul class="view">
-    <li><a href="index.html"><i class="fa-regular fa-house"></i>Home</a></li>
- <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
-  <a href="search.html"><i class="fa-solid fa-search"></i>Search Seller</a>
-    <a href="history.html"><i class="fa-solid fa-notes-medical"></i>History</a>
-    <a href="status.html"><i class="fa-solid fa-chart-simple"></i>Order Review</a>
-  <a href="favorite.html"><i class="fa-solid fa-heart"></i>favorite</a>
-        <a href="#"><i class="fa-regular fa-circle-question"></i>Help</a>
-  <a href="setting.html"><i class="fa-regular fa-user"></i>Profile</a>
-  <a href="#"><i class="fa-regular fa-share-from-square"></i>Log out</a>
-  </ul>
-</div>
+        <!--search-->
+        <div class="searchbar">
+          <div class="search">
+            <input type="text" placeholder="Search products and brands" />
+            <button><i class="fa-solid fa-search"></i></button>
+          </div>
+        </div>
 
+        <div class="menubtn">
+          <div class="notibtn">
+            <button onclick="noti()">
+              <i class="fa-regular fa-bell"></i>
+            </button>
+          </div>
 
-       
-       <!-- button -->
-  <main>
-       <div  class="slide-bar">
-           <div class="slideBtn">  <button onclick="left()"> < </button> </div>
-            <div class="slideBtn"> <button onclick="right()">></button> </div>
-       </div>
-       
-             <!--search-->
-             <div class="searchbar">
-  <input type="text" placeholder="search">
-  <button><i class="fa-solid fa-search"></i></button>
-</div>
-      <!-- image top -->  
-<div class="carousel-container">
-  <div class="carousel-track">
-    
-    <!--slide-1-->
-    <div class="image-slide">
-      <div class="images">
-    <img src="shoes.jpg" alt="shoes">
-      </div>
-      <div class="price">
-        <div class="name">
-          <h3>AIRSTRIDE RUNNER</h3>
-          <p>Lightweight running shoes with breathable mesh and cushioned soles.</p>
-          <span>300.00</span>
-        </div>
-        <div class="colors">
-          <button ><i class="fa-regular fa-star"></i></button>
-          <button ><i class="fa-regular fa-star"></i></button>
-          <button><i class="fa-regular fa-star"></i></button>
-          <button><i class="fa-regular fa-star"></i></button>
-        </div>
-        <div class="choice">
-          <button>BUY</button>
-          <button>ADD TO CART</button>
-        </div>
-      </div>
-    </div>
+          <div class="mens">
+            <i onclick="menu()" class="fa-solid fa-bars menus"></i>
+          </div>
 
-<!--slide-2-->
-    <div class="image-slide">
-      <div class="images">
-        <img src="shoes.jpg" alt="shoes">
-      </div>
-      <div class="price">
-        <div class="name">
-          <h3>FLASH RUNNER</h3>
-          <p>Durable sports shoes with modern styling and all-day comfort.</p>
-          <span>250.00</span>
+          <div class="righto">
+            <img src="vend.jpg" alt="profile" class="vend" />
+            <div class="theme-toggle">
+              <i id="themeIcon" class="fa-solid fa-moon"></i>
+            </div>
+          </div>
         </div>
-        <div class="colors">
-          <button><i class="fa-regular fa-star"></i></button>
-          <button><i class="fa-regular fa-star"></i></button>
- <button><i class="fa-regular fa-star"></i></button>
-          <button ><i class="fa-regular fa-star"></i></button>
-        </div>
-        <div class="choice">
-          <button>BUY</button>
-          <button>ADD TO CART</button>
-        </div>
-      </div>
-    </div>
-    
-    <!--slide-3-->
-    
-     <div class="image-slide">
-      <div class="images">
-        <img src="shoes.jpg" alt="shoes">
-      </div>
-      <div class="price">
-        <div class="name">
-          <h3>FLASH RUNNER</h3>
-          <p>Durable sports shoes with modern styling and all-day comfort.</p>
-          <span>250.00</span>
-        </div>
-        <div class="colors">
-          <button ><i class="fa-regular fa-star"></i></button>
-          <button><i class="fa-regular fa-star"></i></button>
- <button ><i class="fa-regular fa-star"></i></button>
-          <button><i class="fa-regular fa-star"></i></button>
-        </div>
-        <div class="choice">
-          <button>BUY</button>
-          <button>ADD TO CART</button>
-        </div>
-      </div>
-    </div>
-    
-    
-    <!--slide--ends-->
-  </div>
-</div>
+      </header>
 
-      <!-- trending -->
-     <div class="box">
-         <h3><u>#TRENDING</u></h3>
-  <div id="trending" class="trending">
-             
-    <div class="trendes">
-        <img src="shoes.jpg" alt="">
-    <div class="imgDecs">
-     <p>
-  Lightweight running shoes with breathable mesh and cushioned soles.
-  Durable sneakers built for city walks and all-day comfort.</p>
-            </div> 
-         <div class="love">
-           <button><i class="fa-regular fa-heart"></i></button>
-         </div>
-           </div> 
-           
-      
-      <div class="trendes">
-        <img src="shoes.jpg" alt="">
-    <div class="imgDecs">
-     <p>
-  Lightweight running shoes with breathable mesh and cushioned soles.
-  Durable sneakers built for city walks and all-day comfort.</p>
-            </div> 
-         <div class="love">
-           <button><i class="fa-regular fa-heart"></i></button>
-         </div>
-           </div> 
-           
-           
+      <!-- Sidebar -->
+      <div id="sideBar" class="sidemenu">
+        <ul class="view">
+          <li>
+            <a href="index.html"><i class="fa-regular fa-house"></i> Home</a>
+          </li>
+          <li>
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i> Cart</a
+            >
+          </li>
+          <li>
+            <a href="search.html"
+              ><i class="fa-solid fa-search"></i> Search Seller</a
+            >
+          </li>
+          <li>
+            <a href="history.html"
+              ><i class="fa-solid fa-notes-medical"></i> History</a
+            >
+          </li>
+          <li>
+            <a href="status.html"
+              ><i class="fa-solid fa-chart-simple"></i> Order Review</a
+            >
+          </li>
+          <li>
+            <a href="favorite.html"
+              ><i class="fa-solid fa-heart"></i> favorite</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-circle-question"></i> Help</a>
+          </li>
+          <li>
+            <a href="setting.html"
+              ><i class="fa-regular fa-user"></i> Profile</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-regular fa-share-from-square" id="theme"></i> Log
+              out</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main content -->
+      <main>
+        <!-- Story section -->
+        <div class="story-container">
+          <button class="scroll-btn left" id="scrollLeft">&#10095;</button>
+          <div class="story-box">
+            <div class="createstory">
+              <button class="pls"><i class="fa-solid fa-plus"></i></button>
+              <div class="story-image">
+                <img src="person.jpg" alt="prof" class="person" />
+              </div>
+            </div>
+
+            <div class="createstory">
+              <button class="pls"><i class="fa-solid fa-plus"></i></button>
+              <div class="story-image">
+                <img src="person.jpg" alt="prof" class="person" />
+              </div>
+            </div>
+
+            <div class="createstory">
+              <button class="pls"><i class="fa-solid fa-plus"></i></button>
+              <div class="story-image">
+                <img src="person.jpg" alt="prof" class="person" />
+              </div>
+            </div>
+
+            <div class="createstory">
+              <button class="pls"><i class="fa-solid fa-plus"></i></button>
+              <div class="story-image">
+                <img src="person.jpg" alt="prof" class="person" />
+              </div>
+            </div>
+
+            <div class="createstory">
+              <button class="pls"><i class="fa-solid fa-plus"></i></button>
+              <div class="story-image">
+                <img src="person.jpg" alt="prof" class="person" />
+              </div>
+            </div>
+
+            <div class="createstory">
+              <button class="pls"><i class="fa-solid fa-plus"></i></button>
+              <div class="story-image">
+                <img src="person.jpg" alt="prof" class="person" />
+              </div>
+            </div>
+
+            <div class="createstory">
+              <button class="pls"><i class="fa-solid fa-plus"></i></button>
+              <div class="story-image">
+                <img src="person.jpg" alt="prof" class="person" />
+              </div>
+            </div>
+
+            <div class="createstory">
+              <button class="pls"><i class="fa-solid fa-plus"></i></button>
+              <div class="story-image">
+                <img src="person.jpg" alt="prof" class="person" />
+              </div>
+            </div>
+
+            <div class="createstory">
+              <button class="pls"><i class="fa-solid fa-plus"></i></button>
+              <div class="story-image">
+                <img src="person.jpg" alt="prof" class="person" />
+              </div>
+            </div>
+
+            <div class="createstory">
+              <button class="pls"><i class="fa-solid fa-plus"></i></button>
+              <div class="story-image">
+                <img src="person.jpg" alt="prof" class="person" />
+              </div>
+            </div>
+
+            <div class="createstory">
+              <button class="pls"><i class="fa-solid fa-plus"></i></button>
+              <div class="story-image">
+                <img src="person.jpg" alt="prof" class="person" />
+              </div>
+            </div>
+
+            <div class="createstory">
+              <button class="pls"><i class="fa-solid fa-plus"></i></button>
+              <div class="story-image">
+                <img src="person.jpg" alt="prof" class="person" />
+              </div>
+            </div>
+          </div>
+          <button class="scroll-btn right" id="scrollRight">&#10095;</button>
+        </div>
+        <!-- Trending -->
+        <div class="box">
+          <div class="title">
+            <h3><u>#TRENDING</u></h3>
+          </div>
+          <div id="trending" class="trending">
             <div class="trendes">
-        <img src="shoes.jpg" alt="">
-    <div class="imgDecs">
-     <p>
-  Lightweight running shoes with breathable mesh and cushioned soles.
-  Durable sneakers built for city walks and all-day comfort.</p>
-            </div> 
-         <div class="love">
-           <button><i class="fa-regular fa-heart"></i></button>
-         </div>
-           </div> 
-           
+              <div class="products">
+                <img src="ring.jpg" alt="product" />
+                <div class="imgDecs">
+                  <p>
+                    Lightweight running shoes with breathable mesh and cushioned
+                    soles. Durable sneakers built for city walks and all-day
+                    comfort.
+                  </p>
+                </div>
+              </div>
+              <div class="flex"><p>Diamond Ring</p></div>
+              <i class="fa-solid fa-repeat reshare"></i>
+              <img src="New.png" alt="new" class="new" />
+
+              <div class="love"><p>-5%</p></div>
+              <img src="stars.png" alt="stars" class="photo" />
+            </div>
+
             <div class="trendes">
-        <img src="shoes.jpg" alt="">
-    <div class="imgDecs">
-     <p>
-  Lightweight running shoes with breathable mesh and cushioned soles.
-  Durable sneakers built for city walks and all-day comfort.</p>
-            </div> 
-         <div class="love">
-           <button><i class="fa-regular fa-heart"></i></button>
-         </div>
-           </div> 
-      
-      
-         </div>
-     </div>
-      
-      <!-- mens clothes  -->
-      <div class="pot">
-          <h3><u>#PRODUCTS</u></h3>
-  <div id="menClothes" class="clothes">
-      
-      <!--products -->        
-    <div class="start">
-            <img src="shoes.jpg" alt="">
-            <div class="fav">
-            <button><i class="fa-regular fa-heart"></i></button>
+              <div class="products">
+                <img src="bag.jpg" alt="bag" />
+                <div class="imgDecs">
+                  <p>
+                    Lightweight running shoes with breathable mesh and cushioned
+                    soles. Durable sneakers built for city walks and all-day
+                    comfort.
+                  </p>
+                </div>
+              </div>
+              <div class="flex"><p>Gucci Bag</p></div>
+              <i class="fa-solid fa-repeat reshare"></i>
+              <img src="New.png" alt="new" class="new" />
+              <div class="love"><p>-5%</p></div>
+              <img src="stars.png" alt="stars" class="photo" />
             </div>
-            <div class="clothesPrice">
-            <p>$300.00</p>
-   </div>
-    <div class="clothesType">
-           <h4>SNICKER SNIPER AIRSTRIDE RUNNER</h4>
-           <button class="btn-1">Buy Now</button>
-           <button class="btn-2">Add to cart</button>
-   </div>
-   <div class="clothesDecs">
-         <p>lorem Lightweight running shoes with breathable mesh and cushioned soles.</p>
-   </div>
-   </div>   
-   
-   
-   <div class="start">
-            <img src="shoes.jpg" alt="">
-            <div class="fav">
-            <button><i class="fa-regular fa-heart"></i></button>
+
+            <div class="trendes">
+              <div class="products">
+                <img src="shirt.jpg" alt="shirt" />
+                <div class="imgDecs">
+                  <p>
+                    Lightweight running shoes with breathable mesh and cushioned
+                    soles. Durable sneakers built for city walks and all-day
+                    comfort.
+                  </p>
+                </div>
+              </div>
+              <div class="flex"><p>Vintage Shirt</p></div>
+              <i class="fa-solid fa-repeat reshare"></i>
+              <img src="New.png" alt="new" class="new" />
+              <div class="love"><p>-5%</p></div>
+              <img src="stars.png" alt="stars" class="photo" />
             </div>
-            <div class="clothesPrice">
-            <p>$300.00</p>
-   </div>
-    <div class="clothesType">
-           <h4>SNICKER SNIPER AIRSTRIDE RUNNER</h4>
-           <button class="btn-1">Buy Now</button>
-           <button class="btn-2">Add to cart</button>
-   </div>
-   <div class="clothesDecs">
-         <p>lorem Lightweight running shoes with breathable mesh and cushioned soles.</p>
-   </div>
-   </div>   
-   
-   
-   <div class="start">
-            <img src="shoes.jpg" alt="">
-            <div class="fav">
-            <button><i class="fa-regular fa-heart"></i></button>
+
+            <div class="trendes">
+              <div class="products">
+                <img src="sneakers.jpg" alt="sneakers" />
+                <div class="imgDecs">
+                  <p>
+                    Lightweight running shoes with breathable mesh and cushioned
+                    soles. Durable sneakers built for city walks and all-day
+                    comfort.
+                  </p>
+                </div>
+              </div>
+              <div class="flex"><p>Sneakers</p></div>
+              <i class="fa-solid fa-repeat reshare"></i>
+              <img src="New.png" alt="new" class="new" />
+              <div class="love"><p>-5%</p></div>
+              <img src="stars.png" alt="stars" class="photo" />
             </div>
-            <div class="clothesPrice">
-            <p>$300.00</p>
-   </div>
-    <div class="clothesType">
-           <h4>SNICKER SNIPER AIRSTRIDE RUNNER</h4>
-           <button class="btn-1">Buy Now</button>
-           <button class="btn-2">Add to cart</button>
-   </div>
-   <div class="clothesDecs">
-         <p>lorem Lightweight running shoes with breathable mesh and cushioned soles.</p>
-   </div>
-   </div>   
-   
-   <div class="start">
-            <img src="shoes.jpg" alt="">
-            <div class="fav">
-            <button><i class="fa-regular fa-heart"></i></button>
+
+            <div class="trendes">
+              <div class="products">
+                <img src="ring.jpg" alt="product" />
+                <div class="imgDecs">
+                  <p>
+                    Lightweight running shoes with breathable mesh and cushioned
+                    soles. Durable sneakers built for city walks and all-day
+                    comfort.
+                  </p>
+                </div>
+              </div>
+              <div class="flex"><p>Diamond Ring</p></div>
+              <i class="fa-solid fa-repeat reshare"></i>
+              <img src="New.png" alt="new" class="new" />
+              <img src="stars.png" alt="stars" class="photo" />
+              <div class="love"><p>-5%</p></div>
+              <img src="stars.png" alt="stars" class="photo" />
             </div>
-            <div class="clothesPrice">
-            <p>$300.00</p>
-   </div>
-    <div class="clothesType">
-           <h4>SNICKER SNIPER AIRSTRIDE RUNNER</h4>
-           <button class="btn-1">Buy Now</button>
-           <button class="btn-2">Add to cart</button>
-   </div>
-   <div class="clothesDecs">
-         <p>lorem Lightweight running shoes with breathable mesh and cushioned soles.</p>
-   </div>
-   </div>   
-   
-   <!--products ends -->
-           
-      </div>
-      </div>
-  
-  <!--womenclothes-->
+            <div class="trendes">
+              <div class="products">
+                <img src="shirt.jpg" alt="shirt" />
+                <div class="imgDecs">
+                  <p>
+                    Lightweight running shoes with breathable mesh and cushioned
+                    soles. Durable sneakers built for city walks and all-day
+                    comfort.
+                  </p>
+                </div>
+              </div>
+              <div class="flex"><p>Vintage Shirt</p></div>
+              <i class="fa-solid fa-repeat reshare"></i>
+              <img src="New.png" alt="new" class="new" />
+              <div class="love"><p>-5%</p></div>
+              <img src="stars.png" alt="stars" class="photo" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Men Products -->
         <div class="pot">
-          <h3><u>#WOMENCLOTHES</u></h3>
-   <div id="womenClothes" class="clothes">
-        
-      <!--products -->      
-    <div class="start">
-            <img src="shoes.jpg" alt="">
-            <div class="fav">
-            <button><i class="fa-regular fa-heart"></i></button>
+          <div class="title">
+            <h2><u>#PRODUCTS</u></h2>
+          </div>
+          <div id="menClothes" class="clothes">
+            <div class="start">
+              <img src="bag.jpg" alt="bag" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">Vintage Shirt</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <div class="icon-group">
+                  <i class="fa-solid fa-heart come heart"></i>
+                  <p>12.5k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-comment come"></i>
+                  <p>8.2k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-repeat come"></i>
+                  <p>1.1k</p>
+                </div>
+              </div>
             </div>
-            <div class="clothesPrice">
-            <p>$300.00</p>
-   </div>
-    <div class="clothesType">
-           <h4>SNICKER SNIPER AIRSTRIDE RUNNER</h4>
-           <button class="btn-1">Buy Now</button>
-           <button class="btn-2">Add to cart</button>
-   </div>
-   <div class="clothesDecs">
-         <p>lorem Lightweight running shoes with breathable mesh and cushioned soles.</p>
-   </div>
-   </div>   
-   
-   
-   <div class="start">
-            <img src="shoes.jpg" alt="">
-            <div class="fav">
-            <button><i class="fa-regular fa-heart"></i></button>
+
+            <div class="start">
+              <img src="shirt.jpg" alt="shirt" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">Vintage Shirt</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <div class="icon-group">
+                  <i class="fa-solid fa-heart come heart"></i>
+                  <p>12.5k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-comment come"></i>
+                  <p>8.2k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-repeat come"></i>
+                  <p>1.1k</p>
+                </div>
+              </div>
             </div>
-            <div class="clothesPrice">
-            <p>$300.00</p>
-   </div>
-    <div class="clothesType">
-           <h4>SNICKER SNIPER AIRSTRIDE RUNNER</h4>
-           <button class="btn-1">Buy Now</button>
-           <button class="btn-2">Add to cart</button>
-   </div>
-   <div class="clothesDecs">
-         <p>lorem Lightweight running shoes with breathable mesh and cushioned soles.</p>
-   </div>
-   </div>   
-   
-   
-   <div class="start">
-            <img src="shoes.jpg" alt="">
-            <div class="fav">
-            <button><i class="fa-regular fa-heart"></i></button>
+
+            <div class="start">
+              <img src="sneakers.jpg" alt="sneakers" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">Vintage Shirt</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <div class="icon-group">
+                  <i class="fa-solid fa-heart come heart"></i>
+                  <p>12.5k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-comment come"></i>
+                  <p>8.2k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-repeat come"></i>
+                  <p>1.1k</p>
+                </div>
+              </div>
             </div>
-            <div class="clothesPrice">
-            <p>$300.00</p>
-   </div>
-    <div class="clothesType">
-           <h4>SNICKER SNIPER AIRSTRIDE RUNNER</h4>
-           <button class="btn-1">Buy Now</button>
-           <button class="btn-2">Add to cart</button>
-   </div>
-   <div class="clothesDecs">
-         <p>lorem Lightweight running shoes with breathable mesh and cushioned soles.</p>
-   </div>
-   </div>   
-   
-   <div class="start">
-            <img src="shoes.jpg" alt="">
-            <div class="fav">
-            <button><i class="fa-regular fa-heart"></i></button>
+
+            <div class="start">
+              <img src="ring.jpg" alt="ring" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">Vintage Shirt</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <div class="icon-group">
+                  <i class="fa-solid fa-heart come heart"></i>
+                  <p>12.5k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-comment come"></i>
+                  <p>8.2k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-repeat come"></i>
+                  <p>1.1k</p>
+                </div>
+              </div>
             </div>
-            <div class="clothesPrice">
-            <p>$300.00</p>
-   </div>
-    <div class="clothesType">
-           <h4>SNICKER SNIPER AIRSTRIDE RUNNER</h4>
-           <button class="btn-1">Buy Now</button>
-           <button class="btn-2">Add to cart</button>
-   </div>
-   <div class="clothesDecs">
-         <p>lorem Lightweight running shoes with breathable mesh and cushioned soles.</p>
-   </div>
-   </div>  
-   
-   <!--product ends -->
-           
-      </div>
-      </div>
-      <!-- end -->
-  </main>
-     <footer>
-  <div class="home">
-<button onclick="home()"><i class="fa-regular fa-house"></i></button>
-  </div>
-  
-  <div class="find">
-    <button onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
-  </div>
-  
-  <div class="cart">
-    <button onclick="find()"><i class="fa-solid fa-search"></i></button>
-  </div>
-  
-  <div class="faq">
-    <button onclick="status()"><i class="fa-solid fa-chart-simple"></i></button>
-  </div>
-  
-  <div class="contact">
-    <button onclick="user()"><i class="fa-regular fa-user"></i></button>
-  </div>
-  
-</footer>
- 
-    
+
+            <div class="start">
+              <img src="shirt.jpg" alt="shirt" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">Vintage Shirt</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <div class="icon-group">
+                  <i class="fa-solid fa-heart come heart"></i>
+                  <p>12.5k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-comment come"></i>
+                  <p>8.2k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-repeat come"></i>
+                  <p>1.1k</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="start">
+              <img src="sneakers.jpg" alt="sneakers" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">Vintage Shirt</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <div class="icon-group">
+                  <i class="fa-solid fa-heart come heart"></i>
+                  <p>12.5k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-comment come"></i>
+                  <p>8.2k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-repeat come"></i>
+                  <p>1.1k</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="start">
+              <img src="ring.jpg" alt="ring" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">Vintage Shirt</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <div class="icon-group">
+                  <i class="fa-solid fa-heart come heart"></i>
+                  <p>12.5k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-comment come"></i>
+                  <p>8.2k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-repeat come"></i>
+                  <p>1.1k</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Women Products -->
+        <div class="pot">
+          <div class="title">
+            <h2><u>#WOMENCLOTHES</u></h2>
+          </div>
+          <div id="womenClothes" class="clothes">
+            <div class="start">
+              <img src="pinkdress.jpg" alt="pink dress" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">Vintage Dress</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <div class="icon-group">
+                  <i class="fa-solid fa-heart come heart"></i>
+                  <p>12.5k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-comment come"></i>
+                  <p>8.2k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-repeat come"></i>
+                  <p>1.1k</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="start">
+              <img src="whitedresses.jpg" alt="white dress" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">White Dress</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <div class="icon-group">
+                  <i class="fa-solid fa-heart come heart"></i>
+                  <p>12.5k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-comment come"></i>
+                  <p>8.2k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-repeat come"></i>
+                  <p>1.1k</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="start">
+              <img src="blackdress.jpg" alt="black dress" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">Black Dress</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <i class="fa-solid fa-heart come"></i>
+                <p>12.5k</p>
+                <i class="fa-solid fa-comment come"></i>
+                <p>8.2k</p>
+                <i class="fa-solid fa-repeat come"></i>
+                <p>1.1k</p>
+              </div>
+            </div>
+
+            <div class="start">
+              <img src="whine.jpg" alt="wine dress" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">Wine Dress</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <div class="icon-group">
+                  <i class="fa-solid fa-heart come heart"></i>
+                  <p>12.5k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-comment come"></i>
+                  <p>8.2k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-repeat come"></i>
+                  <p>1.1k</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="start">
+              <img src="whitedresses.jpg" alt="white dress" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">White Dress</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <div class="icon-group">
+                  <i class="fa-solid fa-heart come heart"></i>
+                  <p>12.5k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-comment come"></i>
+                  <p>8.2k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-repeat come"></i>
+                  <p>1.1k</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="start">
+              <img src="blackdress.jpg" alt="black dress" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">Black Dress</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <i class="fa-solid fa-heart come"></i>
+                <p>12.5k</p>
+                <i class="fa-solid fa-comment come"></i>
+                <p>8.2k</p>
+                <i class="fa-solid fa-repeat come"></i>
+                <p>1.1k</p>
+              </div>
+            </div>
+
+            <div class="start">
+              <img src="whine.jpg" alt="wine dress" />
+              <div class="tag"><p>$150</p></div>
+              <h3 class="product-name">Wine Dress</h3>
+              <p class="rate"><i class="fa-solid fa-star"></i>(4.0)</p>
+              <button class="carts">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <div class="icons">
+                <div class="icon-group">
+                  <i class="fa-solid fa-heart come heart"></i>
+                  <p>12.5k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-comment come"></i>
+                  <p>8.2k</p>
+                </div>
+                <div class="icon-group">
+                  <i class="fa-solid fa-repeat come"></i>
+                  <p>1.1k</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="home">
+          <button onclick="home()"><i class="fa-regular fa-house"></i></button>
+        </div>
+
+        <div class="find">
+          <button onclick="cart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="cart">
+          <button onclick="find()"><i class="fa-solid fa-search"></i></button>
+        </div>
+
+        <div class="faq">
+          <button onclick="status()">
+            <i class="fa-solid fa-chart-simple"></i>
+          </button>
+        </div>
+
+        <div class="contact">
+          <button onclick="user()"><i class="fa-regular fa-user"></i></button>
+        </div>
+      </footer>
     </div>
-    
-  <script src="main.js"></script>
-</body>
+
+    <script src="main.js"></script>
+  </body>
 </html>
