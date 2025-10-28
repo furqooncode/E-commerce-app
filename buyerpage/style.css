@@ -1,0 +1,1002 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background: #e8e8e8;
+  font-family: sans-serif;
+  font-size: 12px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+main {
+  margin-bottom: 55px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  color: white;
+  top: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  justify-content: space-between;
+  background: white;
+  z-index: 10;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+.logo {
+  height: 100%;
+  width: 100px;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+.menubtn {
+  display: flex;
+  width: 13%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  top: 0;
+  height: 100%;
+}
+.menubtn button {
+  background: whitesmoke;
+  color: black;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+.menus {
+  font-size: 25px;
+  color: #000;
+  background: whitesmoke;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.righto i {
+  font-size: 23px;
+  color: #000;
+}
+
+.righto i:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.righto {
+  display: flex;
+  align-items: center;
+  margin-right: 55px;
+}
+
+.vend {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== THEME TOGGLE BUTTON ====== */
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background: var(--card-bg);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.theme-toggle i {
+  font-size: 18px;
+  color: #000;
+}
+
+.sidemenu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  display: grid;
+  height: 100%;
+  border-radius: 0 16px 16px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  margin: 10px 0;
+}
+.sidemenu .view {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  gap: 20px;
+  top: -17px;
+  text-align: start;
+  width: 40%;
+  height: 100%;
+  padding-top: 20px;
+  background: whitesmoke;
+
+  backdrop-filter: blur(10px);
+}
+ul li {
+  list-style: none;
+  position: relative;
+  padding: 5px 25px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+.sidemenu.show {
+  transform: translateX(0);
+}
+a::before {
+  content: "";
+  position: absolute;
+  background: black;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+a:hover::before {
+  width: 20%;
+}
+a:hover {
+  color: orange;
+}
+/* search bar */
+.searchbar {
+  width: 70%;
+  padding: 5px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-right: 3rem;
+}
+.search {
+  width: 100%;
+  position: relative;
+}
+.searchbar input {
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  padding: 10px 40px 10px 35px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.searchbar input:focus {
+  border-color: orange;
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+.searchbar button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  height: 33px;
+  width: 33px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.searchbar button:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+/* story */
+
+.story-container {
+  position: relative;
+  width: 98%;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.story-box {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 15px;
+  scroll-behavior: smooth;
+  padding: 0 2rem;
+}
+
+.story-box::-webkit-scrollbar {
+  display: none;
+}
+
+.createstory {
+  margin-top: 60px;
+  width: 150px;
+  height: 250px;
+  background: url("/productPage/shirt.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  flex-shrink: 0;
+  gap: 30px;
+  position: relative;
+}
+
+.pls {
+  background: blue;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 50%;
+  position: absolute;
+  color: #ffffff;
+  left: 60px;
+  top: 45px;
+  z-index: 1;
+  border: 2px solid white;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.story-image {
+  height: 60px;
+  width: 60px;
+  background: #e8e8e8;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  left: 45px;
+  overflow: hidden;
+  border: 3px solid white;
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* image slider buttons */
+
+.scroll-btn {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgb(117, 117, 117);
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 5;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0px 0px 30px (227, 228, 236, 0.37);
+}
+
+.scroll-btn:hover {
+  background: white;
+  color: rgb(117, 117, 117);
+}
+
+.scroll-btn.left {
+  left: 5px;
+}
+
+.scroll-btn.right {
+  right: 2px;
+}
+
+/* trending */
+.box {
+  width: 100%;
+  max-width: 100%; /* Add this line */
+  padding: 5px;
+  overflow: hidden;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box h3 {
+  font-size: 18px;
+  color: rgb(36, 36, 36);
+  font-weight: 700;
+  background-color: rgba(255, 166, 0, 0.898);
+  padding: 5px 30px;
+  width: 98%;
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 2px;
+}
+
+.trending {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  margin-left: 3%;
+  width: 100%;
+}
+.trendes {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 230px;
+  height: 350px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.trendes:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.products {
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+  border-bottom: 1px solid orange;
+}
+
+.products img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.new {
+  position: absolute;
+  top: -0.55rem;
+  left: -0.55rem;
+  width: 120px; /* adjust size as needed */
+  height: 120px;
+  object-fit: contain;
+  pointer-events: none; /* so it doesn’t block clicks */
+}
+
+.reshare {
+  position: absolute;
+  z-index: 1;
+  top: 79%;
+  right: 10px;
+  font-size: 18px;
+  color: orange;
+}
+
+.photo {
+  width: 55%;
+  position: absolute;
+  bottom: -10%;
+  left: -8%;
+}
+
+.flex p {
+  margin-top: 10px;
+  padding: 0 0 0 20px;
+  text-align: flex-start;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+
+.love {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 50px;
+  padding: 3px 0;
+  background: orange;
+  border-bottom-right-radius: 16px;
+}
+.love p {
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.imgDecs {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.568);
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s ease-in-out;
+  color: black;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.imgDecs p {
+  position: absolute;
+  width: 90%;
+  left: 1.5rem;
+  top: 6rem;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+.products:hover .imgDecs {
+  opacity: 1;
+  visibility: visible;
+  transition: 1s ease-in-out;
+  border-radius: 16px;
+}
+
+/* mens cloth */
+.pot {
+  width: 100%;
+  max-width: 100%;
+  padding: 5px;
+  margin-top: 20px;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+.pot h2 {
+  font-size: 18px;
+  color: rgb(36, 36, 36);
+  font-weight: 700;
+  background-color: rgba(255, 166, 0, 0.898);
+  padding: 5px 30px;
+  width: 98%;
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 2px;
+}
+.clothes {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 2%;
+  gap: 10px;
+  width: 100%;
+}
+.start {
+  width: 210px;
+  height: 320px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+.start:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.start img {
+  width: 97%;
+  height: 62%;
+  border-radius: 16px;
+  background: whitesmoke;
+  margin-left: 3px;
+}
+
+.tag {
+  position: absolute;
+  inset: 0;
+  background: darkorange;
+  clip-path: polygon(100% 0, 80% 50%, 100% 100%, 0 100%, 0 0);
+  height: 30px;
+  border-top-left-radius: 5px;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 75.5%;
+}
+
+.tag p {
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+}
+
+.product-name {
+  margin-top: 5px;
+  padding: 0 0 0 10px;
+  text-align: flex-start;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+
+.rate {
+  position: absolute;
+  bottom: 30%;
+  right: 10px;
+}
+
+.carts {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 13.5%;
+  background: blue;
+  color: #fff;
+  border: 6px solid #c5c5fd;
+}
+
+.carts:hover {
+  background: darkblue;
+  cursor: pointer;
+}
+
+.icons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #e5e7eb;
+  padding: 10px 0;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: black;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.icon-group i {
+  font-size: 0.9rem;
+}
+
+.icon-group:hover {
+  color: #f59e0b;
+  transform: scale(1.1);
+}
+
+.icon-group p {
+  margin: 0;
+}
+
+.heart.active {
+  color: #e11d48;
+  transform: scale(1.2);
+}
+
+.description {
+  color: red;
+  display: none;
+}
+.unfavour {
+  display: block;
+}
+.favour {
+  display: none;
+}
+/* footer */
+footer {
+  display: flex;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-right: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: whitesmoke;
+  width: 100%;
+  justify-content: space-around;
+  height: 50px;
+}
+footer button {
+  height: 100%;
+  width: 50px;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 24px;
+  background: transparent;
+}
+footer button:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.amount {
+  font-size: 18px;
+  position: absolute;
+  top: 170px;
+  left: 25px;
+  background: green;
+  padding: 2px 5px;
+
+  border-radius: 4px;
+}
+
+.all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  background: yellow;
+  width: 100%;
+}
+
+.ivs {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.fa-star {
+  color: darkorange;
+}
+
+.many {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.person {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* For mobile screens (max width 768px) */
+@media (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  .logo {
+    width: 80px;
+    margin-right: 0;
+  }
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+  .menubtn {
+    width: 25%;
+    margin-right: 1.5rem;
+    gap: 0.5rem;
+  }
+  .searchbar {
+    width: 60%;
+    margin-right: 1rem;
+  }
+  .searchbar input {
+    font-size: 12px;
+    padding: 10px 15px 10px 10px;
+  }
+  .searchbar button {
+    height: 28px;
+    width: 28px;
+    top: 5px;
+    right: 1px;
+  }
+  .search input::placeholder {
+    font-size: 12px;
+  }
+  .menubtn button {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+  .righto {
+    gap: 10px;
+  }
+  .righto i {
+    font-size: 20px;
+  }
+  .theme-toggle {
+    width: 30px;
+    height: 30px;
+    right: 8px;
+  }
+  .theme-toggle i {
+    font-size: 14px;
+  }
+  .story-box {
+    padding: 0 1rem;
+  }
+  .box h3 {
+    font-size: 16px;
+    padding: 7px 20px;
+    width: 100%;
+  }
+  .trending {
+    margin-left: 5px;
+    gap: 8px;
+  }
+  .trendes {
+    width: 150px;
+    height: 240px;
+    margin-bottom: 10px;
+  }
+  .products {
+    height: 65%;
+  }
+  .products img {
+    height: 100%;
+  }
+  .flex p {
+    font-size: 15px;
+    padding: 0 0 0 10px;
+  }
+  .reshare {
+    top: 70%;
+  }
+  .love {
+    width: 30px;
+    height: 40px;
+  }
+  .love p {
+    font-size: 15px;
+  }
+  .photo {
+    width: 70%;
+  }
+  .imgDecs {
+    height: 65%;
+  }
+  .imgDecs p {
+    top: 1rem;
+    left: 0.5rem;
+    font-size: 12px;
+    font-weight: 500px;
+  }
+  .pot h2 {
+    font-size: 16px;
+    padding: 7px 20px;
+    width: 100%;
+  }
+  .clothes {
+    margin-left: 5px;
+    gap: 8px;
+  }
+  .start {
+    width: 150px;
+    height: 270px;
+    margin-bottom: 7px;
+  }
+  .start img {
+    height: 60%;
+  }
+  .product-name {
+    font-size: 14px;
+    padding: 0 0 0 5px;
+  }
+  .tag {
+    height: 25px;
+    top: 73%;
+  }
+  .tag p {
+    font-size: 14px;
+  }
+  .carts {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #c5c5fd;
+    bottom: 15.5%;
+  }
+  .icons {
+    margin-top: 45px;
+    padding: 10px 5px;
+  }
+  .icon-group {
+    font-size: 0.7rem;
+  }
+  .icon-group i {
+    font-size: 0.7rem;
+  }
+}
+
+/* For tablets (max width 992px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+  .menubtn {
+    width: 25%;
+    gap: 0.5rem;
+  }
+  .searchbar {
+    width: 70%;
+    margin-right: 1rem;
+  }
+  .searchbar input {
+    font-size: 15px;
+    padding: 10px 15px 10px 10px;
+  }
+  .searchbar button {
+    height: 28px;
+    width: 28px;
+    top: 5px;
+    right: 1px;
+  }
+  .search input::placeholder {
+    font-size: 14px;
+  }
+  .menubtn button {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+  .righto {
+    gap: 10px;
+  }
+  .righto i {
+    font-size: 23px;
+  }
+  .story-box {
+    padding: 0 1rem;
+  }
+  .box h3 {
+    font-size: 16px;
+    padding: 7px 20px;
+    width: 100%;
+  }
+  .trending {
+    margin-left: 5px;
+    gap: 10px;
+  }
+  .trendes {
+    width: 180px;
+    height: 280px;
+    margin-bottom: 10px;
+  }
+  .products {
+    height: 70%;
+  }
+  .products img {
+    height: 100%;
+  }
+  .flex p {
+    font-size: 17px;
+    padding: 0 0 0 10px;
+  }
+  .reshare {
+    top: 73%;
+  }
+  .love {
+    width: 40px;
+    height: 45px;
+  }
+  .love p {
+    font-size: 16px;
+  }
+  .photo {
+    width: 70%;
+    bottom: -13%;
+  }
+  .imgDecs {
+    height: 70%;
+  }
+  .imgDecs p {
+    top: 2rem;
+    left: 0.5rem;
+    font-size: 13px;
+    font-weight: 600px;
+  }
+  .pot h2 {
+    font-size: 16px;
+    padding: 7px 20px;
+    width: 100%;
+  }
+  .clothes {
+    margin-left: 5px;
+    gap: 8px;
+  }
+  .start {
+    width: 180px;
+    height: 280px;
+    margin-bottom: 7px;
+  }
+  .start img {
+    height: 60%;
+  }
+  .product-name {
+    font-size: 16px;
+    padding: 0 0 0 5px;
+  }
+  .tag {
+    height: 28px;
+    top: 73%;
+  }
+  .tag p {
+    font-size: 16px;
+  }
+  .carts {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #c5c5fd;
+    bottom: 15.5%;
+  }
+  .icons {
+    margin-top: 45px;
+    padding: 10px 5px;
+  }
+  .icon-group {
+    font-size: 0.8rem;
+  }
+  .icon-group i {
+    font-size: 0.8rem;
+  }
+}

@@ -1,114 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Products page</title>
-<link rel="stylesheet" href="product.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body id="product">
-  
-  <div id="purchase" class="container">
-        
-    <!-- product box -->
-   <div class="box">
-       <div class="contain">
-          <img src="" alt="" id="image">
-       </div>
-       <div class="products">
-           <div class="title">
-               <p id="name">Snickers AIRSTREAM RUNNER</p>
-           </div>
-           
-           <div class="price">
-              <span>PRICE:<b id="price">$150000.00</b></span>
-           </div>
-       </div>
-       
-       <div class="select">
-               <span>select size:</span>
-           </div>
-       
-       <div class="size">
-      <button style="background: red;">XS</button>
-          <button>S</button>
-          <button>M</button>
-          <button>L</button>
-          <button>XL</button>
-          <button style="background: red;">XXL</button>
-          <button>3XL</button>
-       </div>
-    
-      
-      <div class="productsDescrip">
-          <span id="description">lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Check out</title>
+    <link rel="stylesheet" href="product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="head-cont">
+        <img class="kit" src="kit.png" alt="kit" />
+        <div class="name-cont">
+          <p class="goods-name">Air Jordan 6 Retro</p>
+          <button class="promo" type="submit">Promo Exclusion</button>
+        </div>
+        <h3 class="price">$25</h3>
+        <div class="color-size">
+          <div class="color-cont">
+            <div class="purple"></div>
+            <div class="red"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+          </div>
+          <div class="size-cont">
+            <p class="size">Size:</p>
+            <button class="num-size">9</button>
+          </div>
+        </div>
       </div>
-   </div>
-    <!-- increase product-->
-    <div class="item">
-      <div class="item-img">
-          <img src="" alt="" id="images">
+      <div class="size-2">
+        <button style="background: red" class="background">XS</button>
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+        <button style="background: red" class="background">XXL</button>
+        <button>3XL</button>
       </div>
-     
-     <div class="itemId">
-       <div class="itemName">
-           <h3 id="namer">SNICKERS ERROR HANDLING</h3>
-           <span id="pricer">$300.00</span>
-       </div>
-       
-       <div class="increase">
-          <button id="minus">-</button>
-          <span id="number">1</span>
-          <button id="plus">+</button>
-       </div>
+      <div class="rate-cont">
+        <h4>Description</h4>
+        <div class="rate">
+          <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+          <h3>4.5</h3>
+          <p class="star-num">/5</p>
+        </div>
+      </div>
+      <div class="note-cont">
+        <p class="note">
+          Mj's sixth signature shoe debuted during the 1990-1991
+        </p>
+        <p class="note-2">
+          season as His Airness battle rivals in pursuit of an elusiv....
+        </p>
+      </div>
+      <div class="footer">
+        <button type="submit">Add to Cart</button>
+      </div>
     </div>
-    
-</div>
-    <!-- buy button -->
-    <div class="get">
-        <button onclick="go()">GET PRODUCT</button>
-    </div>
-    
-    <!--comments-->
-    <div class="comment">
-        
-      <div class="review">
-      <div class="reviewImg">
- <img src="picture.jpeg" alt="" /> 
-      </div> 
-      
-      <div class="reviewname">
-       <p>Hamzat</p>   
- <span>12, Thursday 2025, 12:05</span>
-      </div>
-      </div>
-      
-      
-      <div class="star">
-        <button><i class="fa-regular fa-star"></i></button>
-        <button><i class="fa-regular fa-star"></i></button>  
-      <button><i class="fa-regular fa-star"></i></button>
-    <button><i class="fa-regular fa-star"></i></button>
-    <button><i class="fa-regular fa-star"></i></button>  
-      </div>
-      
-      <div class="words">
-    <p>I recently purchased this product, and I must say, it exceeded my expectations in every way. From the moment I unboxed it, the quality was evident — the materials used feel durable and well-made. The product performs exactly as described, if not better. I’ve been .... it daily, and it has significantly improved my routine. The design is sleek and modern, making it both functional and aesthetically pleasing. Delivery was fast, and the packaging was secure. Overall, I’m extremely satisfied with my purchase and would highly recommend this to anyone looking for reliability and value for money. A solid 10/10!</p>  
-      </div>
-     
-     <div class="closure">
-    <p>234 people find this helpful</p>
-     </div> 
-      
-      <div class="like">
-        <button><i class="fa-regular fa-thumbs-up"></i></button>
-        <button><i class="fa-regular fa-thumbs-down"></i></button>
-      </div>
-      
-    </div>
-    <!-- end-->
-</div>
-  <script src="product.js"></script>
-</body>
+  </body>
 </html>
