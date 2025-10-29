@@ -107,6 +107,7 @@ img{
   display:grid;
   place-items: center;
   opacity: 0;
+  background: red;
 }
 .pop{
   width: 85%;
