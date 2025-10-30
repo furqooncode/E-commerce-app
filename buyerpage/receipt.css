@@ -136,6 +136,7 @@ h3 {
   background: orange;
 }
 
+/* For mobile screens (max width 768px) */
 @media (max-width: 768px) {
   .container {
     max-width: 90%;
@@ -147,5 +148,18 @@ h3 {
 
   .total {
     width: 80%;
+  }
+}
+
+/* For smallest screens (max width 360px) */
+@media (max-width: 420px) {
+  body {
+    padding: 10px;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .list-cont {
+    padding: 15px, 10px;
   }
 }
