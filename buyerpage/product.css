@@ -248,9 +248,52 @@ body {
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
+@media (max-width: 420px) {
   .container {
-    width: 77%;
+    width: 95%;
+    padding: 10px;
+  }
+  .goods-name {
+    font-size: 14px;
+  }
+  .promo {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    height: 25px;
+  }
+  .price {
+    font-size: 23px;
+  }
+  .color-cont div {
+    width: 20px;
+    height: 20px;
+  }
+  .num-size {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+  .size-2 button {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+  .rate-cont {
+    margin-top: 25px;
+  }
+  .rate-cont h4 {
+    font-size: 18px;
+  }
+  .note,
+  .note-2 {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 478px) and (max-width: 768px) {
+  .container {
+    width: 80%;
     padding: 15px;
   }
 
