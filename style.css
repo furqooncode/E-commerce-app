@@ -271,7 +271,7 @@ a:hover {
   margin-top: 60px;
   width: 150px;
   height: 250px;
-  background: url("/buyerpage/shirt.jpg");
+  background: url("./buyerpage/shirt.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 20px;
@@ -883,12 +883,12 @@ footer button:hover {
 }
 
 /* For smallest screens (max width 360px) */
-@media (max-width: 420px)  {
+@media (max-width: 420px) {
   * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   body {
     overflow: hidden;
   }
